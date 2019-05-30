@@ -1,0 +1,445 @@
+@import "owl.carousel.min.css";
+
+
+@font-face {
+    font-family: 'Chrobot Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Chrobot Regular'), url('Chrobot.woff') format('woff');
+    }
+  body {
+    /* font-family: Chrobot Regular ; */
+    /* font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 2em;
+    color: #666 */
+}
+
+#loading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 9999
+}
+
+#loading img {
+    width: 150px
+}
+/* header */
+header {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+
+header a.navbar-brand img {
+    height: 80px
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 99
+}
+
+header .main-header {
+    padding: 10px 90px
+}
+
+header .sub-header {
+    padding: 10px 90px;
+    border-bottom: 1px solid #c7eedf
+}
+
+header .navbar-light {
+    padding: 0
+}
+
+header .sub-header nav {
+    display: flex
+}
+
+header .sub-header .request-btn a {
+    background: #6ecc74;
+    padding: 17px;
+    margin-left: 29px;
+    color: #fff
+}
+
+header .sub-header .request-btn a:hover {
+    background: #46c894;
+    color: #fff
+}
+
+header .btn-group .btn-secondary {
+    background-color: transparent;
+    color: #222;
+    border: none
+}
+
+header .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled):hover, .show>.btn-secondary.dropdown-toggle {
+    background-color: transparent;
+    border-color: transparent;
+    color: #46c894
+}
+
+header .btn-secondary.focus, .btn-secondary:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: none
+}
+
+header .navbar-light .navbar-nav .nav-link, header .navbar-light .navbar-nav .nav-link:focus {
+    color: #222;
+    font-size: 16px;
+    margin-right: 15px;
+    padding: 5px 30px;
+    line-height:2;
+    border-radius: 90px
+}
+
+header .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin: 0
+}
+
+header .breadcrumb .breadcrumb-item a {
+    color: #222;
+    font-size: 16px
+}
+
+header .breadcrumb .breadcrumb-item a:hover {
+    color: #46c894
+}
+
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #fff
+}
+
+header .navbar-light .navbar-nav li.active .nav-link, header .navbar-light .navbar-nav li .nav-link:hover {
+    background: #75cd6f;
+    background: -moz-linear-gradient(left, rgba(116, 186, 56) 15%, rgba(0, 0, 0, 0.8) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(15%, rgba(116, 186, 56)), color-stop(100%, rgba(0, 0, 0, 0.8)));
+    background: -webkit-linear-gradient(left, rgba(116, 186, 56) 15%, rgba(0, 0, 0, 0.8) 100%);
+    background: -o-linear-gradient(left, rgba(116, 186, 56) 15%, rgba(0, 0, 0, 0.8) 100%);
+    background: -ms-linear-gradient(left, rgba(116, 186, 56) 15%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(to right, rgba(116, 186, 56) 15%, rgba(0, 0, 0, 0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cd6f', endColorstr='#46c894', GradientType=1);
+    color: #fff
+}
+/* rgb(116, 186, 56) 15%, rgba(0, 0, 0, 0.8) 100%); */
+.dropdown-item:active, .dropdown-item:hover {
+    background: #fff;
+    color: #76cd6f
+}
+
+header.menu-sticky {
+    background: #75cd6f;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(70, 200, 148, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(70, 200, 148, 1)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(70, 200, 148, 1) 100%);
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(70, 200, 148, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(70, 200, 148, 1) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(70, 200, 148, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75cd6f', endColorstr='#46c894', GradientType=1);
+    -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
+    position: fixed;
+    z-index: 99
+}
+
+header.menu-sticky .navbar.navbar-light .navbar-brand img {
+    height: 60px
+}
+header.menu-sticky .navbar-light .navbar-nav .nav-link{
+    color: #fff !important
+}
+header.menu-sticky .navbar-light .navbar-nav .nav-link:hover{
+    color: #000 !important
+}
+header.menu-sticky .navbar-light .navbar-nav li.active .nav-link, header.menu-sticky .navbar-light .navbar-nav li .nav-link:hover {
+    background: #fff;
+    color: #46c894
+}
+
+header.menu-sticky .navbar-light .navbar-nav .nav-link, header.menu-sticky .navbar-light .navbar-nav .nav-link:focus {
+    color: #fff
+}
+ .navbar-nav .nav-item.active>.nav-link:hover a{
+    color:#fff !important
+}
+.navbar.navbar-light .breadcrumb .nav-item .nav-link:hover, .navbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-item.active>.nav-link{
+    color: #fff !important
+}
+header.menu-sticky .main-header {
+    padding: 10px 90px
+}
+
+header.menu-sticky .sub-header {
+    display: none
+}
+
+header a.navbar-brand .logo-white {
+    display: none
+}
+
+header.menu-sticky a.navbar-brand .logo {
+    display: none
+}
+
+header.menu-sticky a.navbar-brand .logo-white {
+    opacity: 1;
+    display: block
+}
+
+header .navbar-toggler:not(:disabled):not(.disabled) {
+    background: #fff
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #46c894;
+    background-color: transparent
+}
+.navbar { box-shadow: none !important; } 
+.btn-secondary.dropdown-toggle {
+    background-color: #fff!important;
+}
+/* header */
+/* banner */
+.banner {
+    padding: 200px 90px 65px;
+    position: relative;
+    overflow: hidden
+}
+
+.button-banner:hover, .button-banner:focus {
+    background-color: #fff
+}
+
+.banner .banner-text {
+    padding-top: 15%;
+    position: relative
+}
+
+.iq-video {
+    border: 1px solid #46c894;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    font-size: 29px;
+    color: #46c894;
+    border-radius: 100%;
+    line-height: 1.6;
+    margin-left: 20px;
+    background-color: #fff
+}
+
+.iq-video i {
+    margin-left: 5px
+}
+
+.banner:before {
+    content: '';
+    position: absolute;
+    background: url(../img/banner/shap.png);
+    width: 70%;
+    height: 70%;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 41%;
+    -webkit-animation: bounce 2s infinite alternate
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px)
+    }
+    to {
+        transform: translateY(-25px)
+    }
+}
+
+@-webkit-keyframes bounce {
+    from {
+        transform: translateY(0px)
+    }
+    to {
+        transform: translateY(-25px)
+    }
+}
+
+.banner-type:before {
+    content: '';
+    position: absolute;
+    background: url(../img/banner/banner-shap.png);
+    width: 70%;
+    height: 70%;
+    background-repeat: no-repeat;
+    right: -63%;
+    top: -30%;
+    -webkit-animation: bounce 2s infinite alternate
+}
+
+.list-style li {
+    margin: 0 0 15px;
+    padding: 0;
+    list-style: none;
+    font-size: 16px
+}
+
+.list-style li:last-child {
+    margin-bottom: 0
+}
+
+.list-style li i {
+    margin-right: 10px;
+    font-size: 18px
+}
+
+.easy-btn {
+    padding: 10px 70px
+}
+/* banner end */
+/* services */
+.services-block {
+    position: relative
+}
+
+.services-block:before {
+    background: #46c894;
+    content: "";
+    height: 85%;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -1
+}
+
+.services-bg {
+    padding-top: 80px;
+    border-radius: 5px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 30px 0 rgba(108, 99, 255, .2);
+    -moz-box-shadow: 0 0 30px 0 rgba(108, 99, 255, .2);
+    box-shadow: 0 0 30px 0 rgba(108, 99, 255, .2)
+}
+
+.future-services {
+    top: 0;
+    padding: 30px;
+    position: relative;
+    transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out
+}
+
+.future-services:hover {
+    top: -8px;
+    box-shadow: 0 1px 30px 0 rgba(70, 200, 148, .25);
+    background: #fff
+}
+
+.services-list {
+    margin: 0 0 -120px;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    width: 100%
+}
+
+.services-list li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left
+}
+
+.services-list li.one {
+    position: absolute;
+    left: 30px;
+    bottom: 0
+}
+
+.services-list li.two {
+    position: absolute;
+    right: 100px;
+    bottom: 0
+}
+/* services end */
+/* floating images */
+.conection-shap {
+    position: relative;
+    overflow: hidden
+}
+
+.conection-shap:before {
+    content: '';
+    position: absolute;
+    background: url(../img/banner/conection-shap.png);
+    width: 21%;
+    height: 56%;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 41%;
+    -webkit-animation: bounce 2s infinite alternate
+}
+.ba-shap {
+    position: relative;
+    overflow: hidden
+}
+
+.ba-shap:before {
+    content: '';
+    position: absolute;
+    background: url(../img/banner/finding-shap.png);
+    width: 38%;
+    height: 83%;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 25%;
+    left: -47px;
+    -webkit-animation: bounce 2s infinite alternate
+}
+
+
+
+
+
+/* typography */
+
+.title-box {
+    margin-bottom: 75px;
+    text-align: center
+}
+
+.title-box .title {
+    margin-bottom: 5px
+}
+
+.title-box .sub-title {
+    margin: 0 150px
+}
