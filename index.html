@@ -16,22 +16,43 @@
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/responsive.css">
+    <!-- owl -->
+    <link rel="stylesheet" href="owl/assets/owlcarousel/assets/owl.carousel.min.css">
+    <!-- <link rel="stylesheet" href="owl/assets/owlcarousel/assets/owl.theme.default.min.css"> -->
+    <!-- owl -->
+    <script src="owl/assets/vendors/jquery.min.js"></script>
+    <script src="owl/assets/owlcarousel/owl.carousel.js"></script>
+
     <!-- ba slider -->
     <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" type="text/css" href="src/jquery.baSlider.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
 
     <script src="src/jquery.baSlider.js"></script>
     <style>
         .container-ba {
-            margin: 150px auto;
+            margin: 25px auto;
             max-width: 960px;
+
+        }
+
+        .ba-sli {
+            background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(70, 200, 148, 1) 100%);
+            color: rgb(235, 223, 223)
+        }
+
+        .ba-sli .title-box {
+            margin-bottom: 40px;
+        }
+
+        .wethink .title-box {
+            margin-bottom: 40px;
         }
 
         .baslider,
         .frame {
-            height: 400px;
+            height: 300px;
         }
     </style>
 
@@ -124,10 +145,10 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="banner-text">
-                        <h5 class="main-color mb-3">Welcome to neuronoids</h5>
-                        <h1 class="font-weight-bold  mb-3">AI for Marketing</h1>
-                        <p class=" mb-4">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks
-                            as necessary.</p>
+                        <h5 class="main-color mb-3">Welcome to</h5>
+                        <h1 class="font-weight-bold  mb-3">Neuronoids</h1>
+                        <p class=" mb-4">We at Neuronoids have deep roots into developing custom algorithms on the
+                            need basis and building complete processing pipeline end to end. </p>
                         <div class="align-items-center d-flex">
                             <a class="button btn" href="#">Read More</a>
                             <!-- <div class="play-video iq-asked-img">
@@ -150,12 +171,22 @@
     <section class="how-it-works conection-shap">
         <div class="container">
             <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box">
+                        <h2 class="title font-weight-bold">What We Do</h2>
+                        <p class="sub-title">Simply dummy has been the industry's standard dummy text.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
                 <div class="col-lg-4 col-md-4">
                     <div class="future-services text-center wow slideInUp" data-wow-duration="0.5s">
                         <div class="future-img">
                             <img src="img/feature/01.png" class="img-fluid mb-4" alt="">
                         </div>
-                        <h4 class="mb-3">Fully Support</h4>
+                        <h4 class="mb-3">Algorithm Designs</h4>
                         <p class="mb-0">There are many variations of passages of the have suffered in some form.</p>
                     </div>
                 </div>
@@ -164,7 +195,7 @@
                         <div class="future-img">
                             <img src="img/feature/02.png" class="img-fluid mb-4" alt="">
                         </div>
-                        <h4 class="mb-3">Product Review</h4>
+                        <h4 class="mb-3">Machine Learning</h4>
                         <p class="mb-0">There are many variations of passages of the have suffered in some form.</p>
                     </div>
                 </div>
@@ -173,7 +204,7 @@
                         <div class="future-img">
                             <img src="img/feature/03.png" class="img-fluid mb-4" alt="">
                         </div>
-                        <h4 class="mb-3">Product Analysis</h4>
+                        <h4 class="mb-3">Turnkey Solutions</h4>
                         <p class="mb-0">There are many variations of passages of the have suffered in some form.</p>
                     </div>
                 </div>
@@ -181,7 +212,7 @@
         </div>
     </section>
 
-    <div class="container-fluid ba-shap">
+    <div class="container-fluid ba-sli ba-shap mt-4">
         <div class="container-ba">
             <div class="">
                 <div class="col-sm-12">
@@ -218,114 +249,138 @@
             </div>
         </div>
     </div>
-    <section class="iq-blog pt-0 ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="title-box">
-                            <h2 class="title font-weight-bold">Recent Stories</h2>
-                            <p class="sub-title">Simply dummy has been the industry's standard dummy text.</p>
-                        </div>
+    <section class="pt-0 wethink mt-5 mb-5 conection-shap">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box">
+                        <h2 class="title font-weight-bold">What we think</h2>
+                        <!-- <p class="sub-title">Simply dummy has been the industry's standard dummy text.</p> -->
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="owl-carousel" data-autoplay="true" data-loop="true" data-nav="false"
-                            data-dots="true" data-items="2" data-items-laptop="2" data-items-tab="1"
-                            data-items-mobile="1" data-items-mobile-sm="1">
-                            <div class="item">
-                                <div class="blog-box">
-                                    <div class="row no-gutters row-eq-height pb-4">
-                                        <div class="col-sm-6 iq-shadow">
-                                            <div class="content">
-                                                <h5>Established fact that a reader will be</h5>
-                                                <ul>
-                                                    <li><span>By:</span> <a href="#">Admin</a></li>
-                                                    <li>May 10, 2018</li>
-                                                </ul>
-                                                <p class="mt-4">Build virtual agents to automate business processes such
-                                                    as front desk customer engagement.</p>
-                                                <ul class="iq-tag mt-4">
-                                                    <li><a href="#">Design</a></li>
-                                                    <li><a href="#">Style</a></li>
-                                                </ul>
-                                            </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="fully-dedicated wow slideInLeft">
+                        <img src="images/wethink/04.png" class="img-fluid " alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 text-left align-self-center">
+                    <div class="ml-3 mt-3">
+                        <h3 class="font-weight-bold">Fully dedicated to finding the best solutions.</h3>
+                        <p class="mt-3">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s.</p>
+                        <a class="button mt-3 btn" href="#">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="iq-blog pt-0 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box">
+                        <h2 class="title font-weight-bold">Recent Blog Stories</h2>
+                        <p class="sub-title">Simply dummy has been the industry's standard dummy text.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="owl-carousel owl-carousel1" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true"
+                        data-items="2" data-items-laptop="2" data-items-tab="1" data-items-mobile="1"
+                        data-items-mobile-sm="1">
+                        <div class="item">
+                            <div class="blog-box">
+                                <div class="row no-gutters row-eq-height pb-4">
+                                    <div class="col-sm-6 iq-shadow">
+                                        <div class="content">
+                                            <h5>Column squishing for multiclass updates</h5>
+                                            <ul>
+                                                <li><span>By:</span> <a href="#">Admin</a></li>
+                                                <li>May 10, 2018</li>
+                                            </ul>
+                                            <p class="mt-4">Build virtual agents to automate business processes such
+                                                as front desk customer engagement.</p>
+                                            <ul class="iq-tag mt-4">
+                                                <li><a href="#">Visit</a></li>
+                                            </ul>
                                         </div>
-                                        <div class="col-sm-6">
-                                            <img class="img-fluid" src="images/blog/blog-img1.jpg" alt="image">
-                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img class="img-fluid" src="images/blog/blog-img1.jpg" alt="image">
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="blog-box">
-                                    <div class="row no-gutters row-eq-height pb-4">
-                                        <div class="col-sm-6 iq-shadow">
-                                            <div class="content">
-                                                <h5>Established fact that a reader will be</h5>
-                                                <ul>
-                                                    <li><span>By:</span> <a href="#">Admin</a></li>
-                                                    <li>May 10, 2018</li>
-                                                </ul>
-                                                <p class="mt-4">Build virtual agents to automate business processes such
-                                                    as front desk customer engagement.</p>
-                                                <ul class="iq-tag mt-4">
-                                                    <li><a href="#">Design</a></li>
-                                                    <li><a href="#">Style</a></li>
-                                                </ul>
-                                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="blog-box">
+                                <div class="row no-gutters row-eq-height pb-4">
+                                    <div class="col-sm-6 iq-shadow">
+                                        <div class="content">
+                                            <h5>Trying to Learn How to be Helpful (IWD++)</h5>
+                                            <ul>
+                                                <li><span>By:</span> <a href="#">Admin</a></li>
+                                                <li>May 10, 2018</li>
+                                            </ul>
+                                            <p class="mt-4">Over the past week, in honor women of this International
+                                                Women's Day, I had a...</p>
+                                            <ul class="iq-tag mt-4">
+                                                <li><a href="#">Visit</a></li>
+                                            </ul>
                                         </div>
-                                        <div class="col-sm-6">
-                                            <img class="img-fluid" src="images/blog/blog-img2.jpg" alt="image">
-                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img class="img-fluid" src="images/blog/blog-img2.jpg" alt="image">
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="blog-box">
-                                    <div class="row no-gutters row-eq-height pb-4">
-                                        <div class="col-sm-6 iq-shadow">
-                                            <div class="content">
-                                                <h5>Established fact that a reader will be</h5>
-                                                <ul>
-                                                    <li><span>By:</span> <a href="#">Admin</a></li>
-                                                    <li>May 10, 2018</li>
-                                                </ul>
-                                                <p class="mt-4">Build virtual agents to automate business processes such
-                                                    as front desk customer engagement.</p>
-                                                <ul class="iq-tag mt-4">
-                                                    <li><a href="#">Design</a></li>
-                                                    <li><a href="#">Style</a></li>
-                                                </ul>
-                                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="blog-box">
+                                <div class="row no-gutters row-eq-height pb-4">
+                                    <div class="col-sm-6 iq-shadow">
+                                        <div class="content">
+                                            <h5>Awesome people: Kathy McKeown (IWD++)</h5>
+                                            <ul>
+                                                <li><span>By:</span> <a href="#">Admin</a></li>
+                                                <li>May 10, 2018</li>
+                                            </ul>
+                                            <p class="mt-4">Build virtual agents to automate business processes such
+                                                as front desk customer engagement.</p>
+                                            <ul class="iq-tag mt-4">
+                                                <li><a href="#">Visit</a></li>
+                                            </ul>
                                         </div>
-                                        <div class="col-sm-6">
-                                            <img class="img-fluid" src="images/blog/blog-img1.jpg" alt="image">
-                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img class="img-fluid" src="images/blog/blog-img1.jpg" alt="image">
                                     </div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="blog-box">
-                                    <div class="row no-gutters row-eq-height pb-4">
-                                        <div class="col-sm-6 iq-shadow">
-                                            <div class="content">
-                                                <h5>Established fact that a reader will be</h5>
-                                                <ul>
-                                                    <li><span>By:</span> <a href="#">Admin</a></li>
-                                                    <li>May 10, 2018</li>
-                                                </ul>
-                                                <p class="mt-4">Build virtual agents to automate business processes such
-                                                    as front desk customer engagement.</p>
-                                                <ul class="iq-tag mt-4">
-                                                    <li><a href="#">Design</a></li>
-                                                    <li><a href="#">Style</a></li>
-                                                </ul>
-                                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="blog-box">
+                                <div class="row no-gutters row-eq-height pb-4">
+                                    <div class="col-sm-6 iq-shadow">
+                                        <div class="content">
+                                            <h5>Established fact that a reader will be</h5>
+                                            <ul>
+                                                <li><span>By:</span> <a href="#">Admin</a></li>
+                                                <li>May 10, 2018</li>
+                                            </ul>
+                                            <p class="mt-4">Build virtual agents to automate business processes such
+                                                as front desk customer engagement.</p>
+                                            <ul class="iq-tag mt-4">
+                                                <li><a href="#">Visit</a></li>
+                                            </ul>
                                         </div>
-                                        <div class="col-sm-6">
-                                            <img class="img-fluid" src="images/blog/blog-img2.jpg" alt="image">
-                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <img class="img-fluid" src="images/blog/blog-img2.jpg" alt="image">
                                     </div>
                                 </div>
                             </div>
@@ -333,29 +388,192 @@
                     </div>
                 </div>
             </div>
-        </section>
-    <script>
+        </div>
+    </section>
 
-        $('.baSlider').baSlider();
+    <!-- partners -->
+    <section class="iq-clients pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box">
+                        <h2 class="title font-weight-bold">Our Partners</h2>
+                        <p class="sub-title">Simply dummy has been the industry's standard dummy text.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="owl-carousel owl-carousel2" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true"
+                        data-items="6" data-items-laptop="5" data-items-tab="3" data-items-mobile="2"
+                        data-items-mobile-sm="1">
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img" src="images/clients/py.png" alt="image"
+                                    data-toggle="tooltip" title="Python">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img" src="images/clients/clients-img2.png" alt="image"
+                                    data-toggle="tooltip" title="Wordpress">
+                            </div>
+                        </div>
+                        <div class="item">
+                                <div class="clients-box">
+                                        <img class="img-fluid client-img" src="images/clients/py.png" alt="image"
+                                            data-toggle="tooltip" title="Python">
+                                    </div>
+                        </div>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img" src="images/clients/clients-img4.png" alt="image"
+                                    data-toggle="tooltip" title="CSS">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img" src="images/clients/clients-img5.png" alt="image"
+                                    data-toggle="tooltip" title="jQuery">
+                            </div>
+                        </div>
+                        <div class="item">
+                                <div class="clients-box">
+                                        <img class="img-fluid client-img" src="images/clients/py.png" alt="image"
+                                            data-toggle="tooltip" title="Python">
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- partners -->
+    <footer id="contact" class="main-bg pt-5 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-auto mr-auto">
+                    <div class="footer-logo">
+                        <a href="index.html"><img src="img/logo/neuronoidsLogo.png" alt="img"></a>
+                    </div>
+                </div>
+                <div class="col-auto right-footer">
+                    <ul class="nav footer-menu">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="pt-3 ">
+            <div class="pt-3">
+                <div class="row justify-content-between">
+                    <div class="col-auto mr-auto">
+                        <h6 class="text-white iq-font-18"><span>Design<a href="#">@</a></span><a href="">random.com</a>
+                        </h6>
+                    </div>
+                    <div class="col-auto">
+                        <div class="social-icone">
+                            <ul>
+                                <li class="d-inline"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="d-inline"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li class="d-inline"><a href="#"><i class="fab fa-google"></i></a></li>
+                                <li class="d-inline"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <!-- Footer -->
+        <footer class="page-footer footer-gra font-small ">
 
-    </script>
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                <a href="#">neuronoids</a>
+            </div>
+            <!-- Copyright -->
 
-    <!-- Start your project here-->
+        </footer>
+        <!-- Footer -->
+        <div id="back-to-top">
+            <a class="top" id="top" href="#top"><span>Scroll Up</span> <i class="fas fa-arrow-up"></i></a>
+        </div>
 
-    <!-- SCRIPTS -->
-    <!-- custom js -->
-    <!-- JQuery -->
-    <!-- <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script> -->
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <!-- owl carousel-->
-    <script src="js/owl.carousel.min.js"></script>
+        <script>
 
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+            $('.baSlider').baSlider();
+
+        </script>
+        <script>
+            $(document).ready(function () {
+                var owl = $('.owl-carousel1');
+                owl.owlCarousel({
+                    margin: 10,
+                    nav: true,
+                    loop: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 1
+                        },
+                        1000: {
+                            items: 2
+                        }
+                    }
+                })
+            })
+        </script>
+         <script>
+                $(document).ready(function () {
+                    var owl = $('.owl-carousel2');
+                    owl.owlCarousel({
+                        margin: 10,
+                        nav: true,
+                        loop: true,
+                        responsive: {
+                            0: {
+                                items: 3
+                            },
+                            600: {
+                                items: 5
+                            },
+                            1000: {
+                                items: 6
+                            }
+                        }
+                    })
+                })
+            </script>
+
+        <!-- Start your project here-->
+
+        <!-- SCRIPTS -->
+        <!-- custom js -->
+        <!-- JQuery -->
+
+        <!-- <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script> -->
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+
+
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
 
 </body>
 
