@@ -1,4 +1,4 @@
-
+/* linear-gradient(to right, rgba(0, 0, 0, 1) 40%, rgb(117, 187, 56) 100%) neuronoid logo green */
 @font-face {
     font-family: 'Chrobot Regular';
     font-style: normal;
@@ -38,6 +38,10 @@
 .btn-secondary.dropdown-toggle:focus, .btn-secondary.dropdown-toggle:hover {
     background-color: #639836!important;
     color: #fff
+}
+.btn-neuro{
+    background: #71b93a;
+    color: #fff;
 }
 /* header */
 li.nav-item {
@@ -139,12 +143,12 @@ header .breadcrumb .breadcrumb-item a:hover {
 
 header .navbar-light .navbar-nav li.active .nav-link, header .navbar-light .navbar-nav li .nav-link:hover {
     background: #75cd6f;
-    background: -moz-linear-gradient(left, rgba(116, 186, 56) 15%, rgba(0, 0, 0, 0.8) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(15%, rgba(116, 186, 56)), color-stop(100%, rgba(0, 0, 0, 0.8)));
-    background: -webkit-linear-gradient(left, rgba(116, 186, 56) 15%, rgba(0, 0, 0, 0.8) 100%);
-    background: -o-linear-gradient(left, rgba(116, 186, 56) 15%, rgba(0, 0, 0, 0.8) 100%);
-    background: -ms-linear-gradient(left, rgba(116, 186, 56) 15%, rgba(0, 0, 0, 0.8) 100%);
-    background: linear-gradient(to right, rgba(116, 186, 56) 15%, rgba(0, 0, 0, 0.8) 100%);
+    background: -moz-linear-gradient(left, rgba(175, 219, 37, 1) 15%, rgba(0, 0, 0, 0.8) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(15%, rgba(175, 219, 37, 1)), color-stop(100%, rgba(0, 0, 0, 0.8)));
+    background: -webkit-linear-gradient(left, rgba(175, 219, 37, 1) 15%, rgba(0, 0, 0, 0.8) 100%);
+    background: -o-linear-gradient(left, rgba(175, 219, 37, 1) 15%, rgba(0, 0, 0, 0.8) 100%);
+    background: -ms-linear-gradient(left, rgba(175, 219, 37, 1) 15%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(to left, rgba(175, 219, 37, 1) 0%, rgba(0, 0, 0, 0.8) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cd6f', endColorstr='#46c894', GradientType=1);
     color: #fff
 }
@@ -153,15 +157,15 @@ header .navbar-light .navbar-nav li.active .nav-link, header .navbar-light .navb
     background: #fff;
     color: #76cd6f
 }
-
+/* rgba(175, 219, 37, 1) old green */
 header.menu-sticky {
     background: #75cd6f;
-    background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(70, 200, 148, 1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(70, 200, 148, 1)));
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(70, 200, 148, 1) 100%);
-    background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(70, 200, 148, 1) 100%);
-    background: -ms-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(70, 200, 148, 1) 100%);
-    background: linear-gradient(to right, rgba(0, 0, 0, 1) 40%, rgba(70, 200, 148, 1) 100%);
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(175, 219, 37, 1)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75cd6f', endColorstr='#46c894', GradientType=1);
     -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
     -moz-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
@@ -398,6 +402,22 @@ header .navbar-toggler:not(:disabled):not(.disabled) {
 }
 /* services end */
 /* floating images */
+.left-shap {
+    position: relative;
+    overflow: hidden
+}
+.left-shap:before {
+    content: '';
+    position: absolute;
+    background: url(../img/banner/shapg.png);
+    width: 70%;
+    height: 70%;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 41%;
+    -webkit-animation: bounce 2s infinite alternate
+}
+
 .conection-shap {
     position: relative;
     overflow: hidden
@@ -598,14 +618,22 @@ footer .social-icone ul li:nth-last-child(1) {
     padding-right: 0
 }
 .footer-gra{
-    background: #75cd6f;
-    background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(70, 200, 148, 1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(70, 200, 148, 1)));
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(70, 200, 148, 1) 100%);
-    background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(70, 200, 148, 1) 100%);
-    background: -ms-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(70, 200, 148, 1) 100%);
-    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(70, 200, 148, 1) 100%);
+        background: #75cd6f;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(175, 219, 37, 1)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75cd6f', endColorstr='#46c894', GradientType=1);
+    /* background: #75cd6f;
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(175, 219, 37, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(175, 219, 37, 1)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(175, 219, 37, 1) 100%);
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(175, 219, 37, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(175, 219, 37, 1) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(175, 219, 37, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75cd6f', endColorstr='#46c894', GradientType=1); */
 }
 /* footer end */
 
@@ -647,12 +675,12 @@ a, button {
 }
 .main-bg {
     background: #75cd6f;
-    background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(70, 200, 148, 1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(70, 200, 148, 1)));
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(70, 200, 148, 1) 100%);
-    background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(70, 200, 148, 1) 100%);
-    background: -ms-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(70, 200, 148, 1) 100%);
-    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(70, 200, 148, 1) 100%);
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(175, 219, 37, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(175, 219, 37, 1)));
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(175, 219, 37, 1) 100%);
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(175, 219, 37, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(175, 219, 37, 1) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(175, 219, 37, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75cd6f', endColorstr='#46c894', GradientType=1);
 }
 .owl-nav{
