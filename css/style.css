@@ -6,6 +6,8 @@
     src: local('Chrobot Regular'), url('Chrobot.woff') format('woff');
     }
   body {
+    /* font-family: sans-serif; */
+
     /* font-family: Chrobot Regular ; */
      /* font-weight: 400;
     font-style: normal;
@@ -15,6 +17,24 @@
     /* color: #fff !important;
     background: rgb(23, 31, 22) */
 }
+.headings{
+    color: #a1c922;
+}
+/* map */
+.map-container-2{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container-2 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+/* map end */
 
 #loading {
     width: 100%;
@@ -44,6 +64,9 @@
     color: #fff;
 }
 /* header */
+a.nav-link.active{
+    background: #aace37 !important;
+}
 li.nav-item {
     margin: 0px 10px 0px 0px;
 }
@@ -159,14 +182,15 @@ header .navbar-light .navbar-nav li.active .nav-link, header .navbar-light .navb
 }
 /* rgba(175, 219, 37, 1) old green */
 header.menu-sticky {
-    background: #75cd6f;
+    background: #212121!important;
+    /* background: #75cd6f;
     background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(175, 219, 37, 1)));
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
     background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
     background: -ms-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
     background: linear-gradient(to right, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75cd6f', endColorstr='#46c894', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75cd6f', endColorstr='#46c894', GradientType=1); */
     -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
     -moz-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
@@ -428,7 +452,7 @@ header .navbar-toggler:not(:disabled):not(.disabled) {
     position: absolute;
     background: url(../img/banner/conection-shap.png);
     width: 21%;
-    height: 56%;
+    height: 60%;
     background-repeat: no-repeat;
     right: 0;
     top: 41%;
@@ -456,7 +480,7 @@ header .navbar-toggler:not(:disabled):not(.disabled) {
     background: #3fb384;
     padding: 30px;
     position: relative;
-    background:
+    height: 90%;
 }
 
 .blog-box .content:after {
@@ -494,6 +518,12 @@ header .navbar-toggler:not(:disabled):not(.disabled) {
     color: #222;
      
 }
+.blog-box .content h5{
+    font-weight: 500;
+}
+.blog-box .content p{
+    font-weight: 400;
+}
 
 .blog-box .content ul li:last-child {
     border: none
@@ -515,7 +545,8 @@ header .navbar-toggler:not(:disabled):not(.disabled) {
 
 .blog-box .content p {
     font-size: 14px;
-    line-height: 24px
+    line-height: 24px;
+    color: #fff;
 }
 
 .blog-box ul.iq-tag li {
