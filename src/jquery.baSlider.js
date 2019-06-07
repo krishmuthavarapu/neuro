@@ -298,7 +298,7 @@
         * place of dividing the photo horizontally & vertically
         */
         start: {
-            horizontal: "50%",
+            horizontal: "52%",
             vertical: "50%"
         },
 
@@ -307,11 +307,11 @@
 	    */
         anim: {
 			play: true,
-            startDelay: 5000,
+            startDelay: 1000,
             delay: 10000,
             speed: 500,
-            distance: 15,
-            times: 2
+            distance: 35,
+            times: 4
         },
         
         /**
