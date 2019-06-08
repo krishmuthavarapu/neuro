@@ -7,7 +7,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Neuronoid</title>
     <link rel="shortcut icon" href="img/logo/neuronoidsimage.png" type="image/x-icon">
-
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
@@ -64,6 +63,7 @@
 </head>
 
 <body >
+<?php include('config.php'); ?>
 
     <!-- Start your project here-->
     <!-- <div id="loading">
@@ -586,7 +586,19 @@
 <!--Section: Contact v.2-->
 <section class="mb-4 pt-5" id="contact">
 <div class="container">
-  
+<?php
+
+if (isset($_POST['save'])) {
+  $mysqltime = date_create()->format('Y-m-d H:i:s'); 
+  $sql = "INSERT INTO users(name, email, number, message, date)
+    VALUES ('" . $_POST["name"] . "','" . $_POST["email"] . "', '" . $_POST["number"] . "', '" . $_POST["message"] . "', '".$mysqltime."')";
+
+  $result = mysqli_query($conn, $sql);
+
+//   header('Location:index.php');
+}
+
+?>
     <!--Section heading-->
     <h2 class="h1-responsive font-weight-bold text-center my-4">Contact <b class="headings">us</b></h2>
     <!--Section description-->
@@ -598,7 +610,7 @@
     <div class="row">
         <!--Grid column-->
         <div class="col-md-12 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="" method="POST">
+            <form  name="" action="" method="post">
 
                 <!--Grid row-->
                 <div class="row">
@@ -649,12 +661,12 @@
                     </div>
                 </div>
                 <!--Grid row-->
-
+                <div class="text-center text-md-left">
+                <button class="btn btn-primary" type="submit" name="save">Send</button>
+            </div>
             </form>
 
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
+           
             <div class="status"></div>
         </div>
         <!--Grid column-->
