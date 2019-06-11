@@ -122,7 +122,7 @@
                                     <a class="nav-link" href="#wethink">What We Think</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contact Us</a>
+                                    <a class="nav-link" href="#career">Careers</a>
                                 </li>
                                 <!-- <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -570,7 +570,7 @@
             </div>
         </div>
     </section>
-    <section class="iq-clients pt-0 mt-5" id="openings">
+    <section class="iq-clients pt-5 mt-0" id="career">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
