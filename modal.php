@@ -1,0 +1,155 @@
+<div class="modal fade" id="think1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <h5 class="modal-title" id="exampleModalLabel">Algorithm Research</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="future-img">
+                    <img src="img/feature/ad.png" class="img-fluid mb-4" alt="">
+                </div>
+                <p class="mb-0">We do research or implement the algorithms as per the need of the pipe line designed. This
+                    includes rigorous analysis and testing of the algorithms to be put for use. </p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="think2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <h5 class="modal-title" id="exampleModalLabel">Building Pipeline</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="future-img">
+                    <img src="img/feature/mach.png" class="img-fluid mb-4" alt="">
+                </div>
+                <p class="mb-0">We implement the pipeline fitting into common frame work in an integrated fashion. We help our customers to build the pipeline with minimal data move operations and computationally efficiency.</p>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="think3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <h5 class="modal-title" id="exampleModalLabel">Development</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="future-img">
+                    <img src="img/feature/dev.png" class="img-fluid mb-4" alt="">
+                </div>
+                <p class="mb-0">We implement the pipeline fitting into common frame work in an integrated fashion. In this phase we build data structures and proper data flow over the pipe line converged along with the algorithms. It is to run in initialization, execute and exit stages.</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="think4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <h5 class="modal-title" id="exampleModalLabel">Idea Validation</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="future-img">
+                    <img src="img/feature/ad.png" class="img-fluid mb-4" alt="">
+                </div>
+                <p class="mb-0">We encourage our clients to come up with their needs. We take up the responsibility in building the pipe line and scoping out the effort and realization possibilities. This kind of description and the purpose described is enough for our teams to enhance the idea considering the feasibility study.</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="think5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <h5 class="modal-title" id="exampleModalLabel">Pipeline Architecture</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="future-img">
+                    <img src="img/feature/mach.png" class="img-fluid mb-4" alt="">
+                </div>
+                <p class="mb-0">The pipeline architecture is about proposing a pipeline of the processing to make the idea realized. The pipe line Architecture involves the following phases.
+                    Input read &#8594;Feature computation &#8594;detect the object &#8594;Classify the object &#8594;update the count.
+                </p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="think6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <h5 class="modal-title" id="exampleModalLabel">Pipeline Acceleration</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="future-img">
+                    <img src="img/feature/turn.png" class="img-fluid mb-4" alt="">
+                </div>
+                <p class="mb-0">Most of the computationally intensive tasks are required to be ported on to some kind of parallel architecture. We do port pipeline built over any hardware platforms based on the need.
+                </p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- turnkey -->
+
+
+<!-- <div class="col-lg-4 col-md-4">
+                    <div class="future-services text-center wow slideInUp" data-wow-duration="1.5s">
+                        <div class="future-img">
+                            <img src="img/feature/turn.png" class="img-fluid mb-4" alt="">
+                        </div>
+                        <h4 class="mb-3">Turnkey Solutions</h4>
+                        <p class="mb-0">Turnkey is a product or service that is designed, supplied, built, or installed fully complete and ready to operate.</p>
+                    </div>
+                </div> -->

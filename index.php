@@ -191,19 +191,31 @@
                 <div class="col-md-6 text-left align-self-center">
                     <div class="ml-3 mt-3">
                         <!-- <h3 class="font-weight-bold">Fully dedicated to finding the best solutions.</h3> -->
-                        <p class="mt-3">We at Neuronoids have deep roots into developing custom algorithms on the need basis and building complete processing pipeline end to end. Our team offers services in the areas of Machine Learning, Computer Vision, Natural Language Processing and Text Alanytics. The team involved has vast experience in driving an idea from an imagination to reality. We also provide services in accelerating the algorithms both by reaseraching alternatives in computational and functional space. We provide the custom libaries on demand basis so the clients can use the labrires to build their processing pipe lines. We provide different kind of supports.</p>
+                        <p class="mt-3">
+                        We offer services in the areas of Machine Learning, Computer Vision, Natural Language
+Processing and Text Analytics. The team involved has vast experience in driving an idea from an
+imagination to reality. We also provide services in accelerating the algorithms both by
+researching alternatives in computational and functional space. We provide the custom
+libraries on demand basis so that the clients can use the libraries to build their processing pipe
+lines.
+                        </p>
+                        <p>Our Vision and Mission Statements are..</p>
                         <!-- <a class="button mt-3 btn btn-neuro" href="#">Get Started</a> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="how-it-works left-shap pt-5 pb-4" id="whatwe">
+<?php include('modal.php');?>    
+<section>
+
+    </section>
+    <section class="how-it-works left-shap pt-5 pb-4" id="wethink">
         <div class="container pt-2">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="title-box">
-                        <h2 class="title font-weight-bold"><b class="headings">What</b> We Do</h2>
+                        <h2 class="title font-weight-bold"><b class="headings">What</b> We Think</h2>
                         <!-- <p class="sub-title">Simply dummy has been the industry's standard dummy text.</p> -->
                     </div>
                 </div>
@@ -217,7 +229,8 @@
                             <img src="img/feature/ad.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Algorithm Research</h4>
-                        <p class="mb-0">We do research or implement the algorithms as per the need of the pipe line designed. This includes rigorous analysis and testing of the algorithms to be put for use.</p>
+                        <p class="mb-0">We do research or implement the algorithms as per the need...</p>
+                        <a href="#!" data-toggle="modal" data-target="#think1">Read more</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
@@ -225,17 +238,21 @@
                         <div class="future-img">
                             <img src="img/feature/mach.png" class="img-fluid mb-4" alt="">
                         </div>
-                        <h4 class="mb-3">Machine Learning</h4>
-                        <p class="mb-0">Machine Learning is the field of study that gives computers the capability to learn without being explicitly programmed.</p>
+                        <h4 class="mb-3">Building Pipeline</h4>
+                        <p class="mb-0">We implement the pipeline fitting into common frame work...</p>
+                        <a href="#!" data-toggle="modal" data-target="#think2">Read more</a>
+
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="future-services text-center wow slideInUp" data-wow-duration="1.5s">
                         <div class="future-img">
-                            <img src="img/feature/dev.png" class="img-fluid mb-4" alt="">
+                            <img src="img/feature/dev.png"  class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Development</h4>
-                        <p class="mb-0">We implement the pipeline fitting into common frame work in an integrated fashion. In this phase we build data structures and proper data flow over the pipe line converged along with the algorithms.</p>
+                        <p class="mb-0">We implement the pipeline fitting into common frame work...</p>
+                        <a href="#!" data-toggle="modal" data-target="#think3">Read more</a>
+
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
@@ -244,7 +261,9 @@
                             <img src="img/feature/ad.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Idea Validation</h4>
-                        <p class="mb-0">We encourage our clients to come up with their needs. We take up the responsibility in building the pipe line and scoping out the effort and realization possibilities.</p>
+                        <p class="mb-0">We encourage our clients to come up with their needs. We take...</p>
+                        <a href="#!" data-toggle="modal" data-target="#think4">Read more</a>
+
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
@@ -255,7 +274,9 @@
                         <h4 class="mb-3">Pipeline Architecture</h4>
                         <p class="mb-0">
 
-                            The pipeline architecture is about proposing a pipeline of the processing to make the idea realized. The pipe line Architecture involves Input read, Feature computation, detect the object, Classify the object, update the count.</p>
+                            The pipeline architecture is about proposing a pipeline of the...</p>
+                            <a href="#!" data-toggle="modal" data-target="#think5">Read more</a>
+
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
@@ -263,8 +284,10 @@
                         <div class="future-img">
                             <img src="img/feature/turn.png" class="img-fluid mb-4" alt="">
                         </div>
-                        <h4 class="mb-3">Turnkey Solutions</h4>
-                        <p class="mb-0">Turnkey is a product or service that is designed, supplied, built, or installed fully complete and ready to operate.</p>
+                        <h4 class="mb-3">Pipeline Acceleration</h4>
+                        <p class="mb-0">Most of the computationally intensive tasks are...</p>
+                        <a href="#!" data-toggle="modal" data-target="#think6">Read more</a>
+
                     </div>
                 </div>
             </div>
