@@ -23,6 +23,10 @@
 .headings{
     color: #a1c922;
 }
+.owl-carousel4 .item .clients-box{
+    text-align: center;
+   height: 150px    ;
+}
 /* map */
 .map-container-2{
     overflow:hidden;
