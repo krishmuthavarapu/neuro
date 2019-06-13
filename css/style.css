@@ -17,6 +17,10 @@
     /* color: #fff !important;
     background: rgb(23, 31, 22) */
 }
+.btn-secondary {
+    background-color: #6c7a74!important;
+    color: #fff;
+}
 .future-services img{
       width: 200px
 }
@@ -607,6 +611,7 @@ header .navbar-toggler:not(:disabled):not(.disabled) {
 
 .clients-box:hover {
     border: 1px solid #fff;
+    background: white;
     top: -6px;
     -webkit-box-shadow: 0 10px 46px -4px rgba(70, 200, 148, .5);
     -moz-box-shadow: 0 10px 46px -4px rgba(70, 200, 148, .5);
@@ -735,3 +740,64 @@ a, button {
     font-weight: 600;
     overflow: hidden;
 }
+/* fixed button */
+#feedback {
+	height: 0px;
+	width: 85px;
+	position: fixed;
+	right: 0;
+	top: 50%;
+	z-index: 1000;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+#feedback a {
+	display: block;
+	background:#aace37;
+	height: 52px;
+	padding-top: 10px;
+	width: 155px;
+	text-align: center;
+	color: #fff;
+	font-family: Arial, sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: none;
+}
+#feedback a:hover {
+	background:#aace37;
+}
+
+@media (min-width: 576px){
+    .cus-model .modal-dialog {
+    max-width: 500px;
+    margin: 0rem auto;
+  
+    float: right;
+    height: 100%;
+
+}
+.cus-model .modal-content{
+    height: 100%;
+}
+.cus-model{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+}
+.cus-model .text-md-left{
+    text-align: right !important;
+}
+/* .modal-dialog {
+    max-width: 500px;
+    margin: 0rem auto;
+  
+    float: right;
+    height: 100% !important;
+} */

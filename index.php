@@ -65,7 +65,7 @@
 
 <body>
     <?php
-    // include('config.php'); 
+    include('config.php');
     ?>
 
     <!-- Start your project here-->
@@ -105,7 +105,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="index.php">
                             <img src="img/logo/logo.png" class="img-fluid logo" alt="img">
                             <img src="img/logo/logo.png" class="img-fluid logo-white" alt="img">
                         </a>
@@ -172,7 +172,7 @@
     </div>
     <!-- baneer end -->
     <!-- services or what we think -->
-    <section class="pt-0 wethink pt-5 mb-5 conection-shap " id="whowe">
+    <section class="pt-0 wethink pt-5 mb-lg-5 conection-shap " id="whowe">
         <div class="container pt-2">
             <div class="row">
                 <div class="col-sm-12">
@@ -206,12 +206,32 @@
                     </div>
                 </div>
             </div>
+            <div class="row mt-3">
+                <div class="col-lg-6 text ">
+                    <div class="p-5 future-services  wow slideInUp" data-wow-duration="0.5s">
+                    <h4 class="font-weight-bold text-center">Our <b class="headings">Mission</b></h4>
+                    <p class="mt-3">Providing latest technology access in Machine Learning, computer vision and data analytics
+                        space to our customers with timely execution and reasonable cost by engaging them closely
+                        and making our clients excel in their business and exceeding their expectation by building more
+                        customized solution for them</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text ">
+                   <div class="p-5 future-services  wow slideInUp" data-wow-duration="0.5s">
+                   <h4 class="font-weight-bold text-center">Our <b class="headings">Vision</b></h4>
+                    <p class="mt-3">
+                        To increase the reach and access of result oriented Insights, by reducing the research and
+                        investigating time of machine learning seekers, by building unified frame works and platforms
+                        to become leader and trusted solution provider in the technology of molding intelligence and
+                        efficiency into the system.
+                    </p>
+                   </div>
+                </div>
+            </div>
         </div>
     </section>
     <?php include('modal.php'); ?>
-    <section>
-
-    </section>
+  
     <section class="how-it-works left-shap pt-5 pb-4" id="wethink">
         <div class="container pt-2">
             <div class="row">
@@ -369,7 +389,7 @@
             </div>
         </div>
     </section> -->
-    <section class="iq-blog pt-0 pt-5" id="wedo">
+    <section class="iq-blog pt-0 pt-5 conection-shap" id="wedo">
         <div class="container pt-4">
             <div class="row">
                 <div class="col-sm-12">
@@ -417,7 +437,7 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="future-services text-center wow slideInUp" data-wow-duration="0.5s">
                         <div class="future-img">
-                            <img src="img/feature/turn.png" class="img-fluid mb-4" alt="">
+                            <img src="img/feature/mach.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Machine Learning</h4>
                         <p class="mb-0">Machine Learning is a part of Artificial Intelligence. It builds...</p>
@@ -450,238 +470,17 @@
             </div>
         </div>
     </section>
-    <!-- partners -->
-    <section class="iq-clients pt-0 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="title-box">
-                        <h2 class="title font-weight-bold">Our <b class="headings"> Partners</b></h2>
-                        <!-- <p class="sub-title">We Work on Many Programming Languages and tools, Mainly on.</p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="owl-carousel owl-carousel4" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true" data-items="6" data-items-laptop="5" data-items-tab="3" data-items-mobile="2" data-items-mobile-sm="1">
-                        <div class="item">
-                            <div class="clients-box">
-                                <img class="img-fluid client-img" src="img/partners/russel.png" alt="image" data-toggle="tooltip" title="McLEOD Russel">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="clients-box">
-                                <img class="img-fluid client-img" src="img/partners/zessta.png" alt="image" data-toggle="tooltip" title="Zessta">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="clients-box">
-                                <img class="img-fluid client-img" src="img/partners/prime.png" alt="image" data-toggle="tooltip" title="Prime Classes">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="clients-box">
-                                <img class="img-fluid client-img bg-dark" src="img/partners/flochat.png" alt="image" data-toggle="tooltip" title="Flochat">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="clients-box">
-                                <img class="img-fluid client-img bg-dark" src="img/partners/nviso.png" alt="image" data-toggle="tooltip" title="NVISO">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="clients-box">
-                                <img class="img-fluid client-img" src="img/partners/thinci.png" alt="image" data-toggle="tooltip" title="thinci">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="clients-box">
-                                <img class="img-fluid client-img" src="img/partners/insights.png" alt="image" data-toggle="tooltip" title="Insights Of Data">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="clients-box">
-                                <img class="img-fluid client-img" src="img/partners/karnataka.jpg" alt="image" data-toggle="tooltip" title="Karnataka Forest Department">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <section>
 
 
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="owl-carousel owl-carousel1" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true" data-items="2" data-items-laptop="2" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1">
-                        <div class="item">
-                            <div class="blog-box">
-                                <div class="row no-gutters row-eq-height pb-4">
-                                    <div class="col-sm-6 iq-shadow">
-                                        <div class="content">
-                                            <h5>Hardware Acceleration</h5>
-                                            <!-- <ul>
-                                                <li><span>By:</span> <a href="#">Admin</a></li>
-                                                <li>May 10, 2018</li>
-                                            </ul> -->
-                                            <p class="mt-4">Most of the computational intensive task are required to ported on some kind of parallel architecture. We do port pipeline built over any hardware platforms like GPU, FPGA or CPU based on the need.</p>
-                                            <ul>
-
-                                            </ul>
-                                            <!-- <ul class="iq-tag mt-4">
-                                                    <li><a href="#">Visit</a></li>
-                                                </ul> -->
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <img class="img-fluid" src="images/blog/blog-img1.jpg" alt="image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="blog-box">
-                                <div class="row no-gutters row-eq-height pb-4">
-                                    <div class="col-sm-6 iq-shadow">
-                                        <div class="content">
-                                            <h5>Computer Vision</h5>
-                                            <!-- <ul>
-                                                <li><span>By:</span> <a href="#">Admin</a></li>
-                                                <li>May 10, 2018</li>
-                                            </ul> -->
-                                            <p class="mt-4">We enable the companies with the vision technology reducing their time to market with our expertise in realising the algorithms. We offer the following services,.
-                                            </p>
-                                            <!-- <ul class="iq-tag mt-4">
-                                                <li><a href="#">Visit</a></li>
-                                            </ul> -->
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <img class="img-fluid" src="images/blog/blog-img2.jpg" alt="image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="blog-box">
-                                <div class="row no-gutters row-eq-height pb-4">
-                                    <div class="col-sm-6 iq-shadow">
-                                        <div class="content">
-                                            <h5>Machine Learning</h5>
-                                            <!-- <ul>
-                                                <li><span>By:</span> <a href="#">Admin</a></li>
-                                                <li>May 10, 2018</li>
-                                            </ul> -->
-                                            <p class="mt-4">Machine Learning is now offering a plethora of applications which were once thought unachievable. It is important to understand its two main branches – supervised learning and unsupervised learning. With that ambition, we want you to deep dive with us on this subject with differentiations between both of them.</p>
-                                            <!-- <ul class="iq-tag mt-4">
-                                                <li><a href="#">Visit</a></li>
-                                            </ul> -->
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <img class="img-fluid" src="images/blog/blog-img1.jpg" alt="image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="blog-box">
-                                <div class="row no-gutters row-eq-height pb-4">
-                                    <div class="col-sm-6 iq-shadow">
-                                        <div class="content">
-                                            <h5>Deep Learning</h5>
-                                            <!-- <ul>
-                                                <li><span>By:</span> <a href="#">Admin</a></li>
-                                                <li>May 10, 2018</li>
-                                            </ul> -->
-                                            <p class="mt-4">The way you use data can influence your market position and competitive advantage. It is necessary to determine whether your data science capabilities are appropriate to make a significant business impact. We do offer the following services working in close with our clients.</p>
-                                            <!-- <ul class="iq-tag mt-4">
-                                                <li><a href="#">Visit</a></li>
-                                            </ul> -->
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <img class="img-fluid" src="images/blog/blog-img2.jpg" alt="image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="blog-box">
-                                <div class="row no-gutters row-eq-height pb-4">
-                                    <div class="col-sm-6 iq-shadow">
-                                        <div class="content">
-                                            <h5>Natural Language Processing</h5>
-                                            <!-- <ul>
-                                                    <li><span>By:</span> <a href="#">Admin</a></li>
-                                                    <li>May 10, 2018</li>
-                                                </ul> -->
-                                            <p class="mt-4">NLP is to make computers understand and generate human language. We offer language processing services. NLP will become an important technology in bridging the gap between human communication and digital data.</p>
-                                            <!-- <ul class="iq-tag mt-4">
-                                                    <li><a href="#">Visit</a></li>
-                                                </ul> -->
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <img class="img-fluid" src="images/blog/blog-img2.jpg" alt="image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="blog-box">
-                                <div class="row no-gutters row-eq-height pb-4">
-                                    <div class="col-sm-6 iq-shadow">
-                                        <div class="content">
-                                            <h5>Interpretation</h5>
-                                            <!-- <ul>
-                                                        <li><span>By:</span> <a href="#">Admin</a></li>
-                                                        <li>May 10, 2018</li>
-                                                    </ul> -->
-                                            <p class="mt-4">Enormous amounts of information are now accessible as never before - from proprietary big data to new public sources of open data. We’ll help you make sense of the challenges to make better decisions.</p>
-                                            <!-- <ul class="iq-tag mt-4">
-                                                        <li><a href="#">Visit</a></li>
-                                                    </ul> -->
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <img class="img-fluid" src="images/blog/blog-img2.jpg" alt="image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="blog-box">
-                                <div class="row no-gutters row-eq-height pb-4">
-                                    <div class="col-sm-6 iq-shadow">
-                                        <div class="content">
-                                            <h5>Deep Mining</h5>
-                                            <!-- <ul>
-                                                            <li><span>By:</span> <a href="#">Admin</a></li>
-                                                            <li>May 10, 2018</li>
-                                                        </ul> -->
-                                            <p class="mt-4">Neuronoids turns technology into business outcomes by delivering information management, business intelligence and analytic solutions under one umbrella. We collaborate with our clients building their proprietary solution for their hidden data. The services we offer are under this category.</p>
-                                            <!-- <ul class="iq-tag mt-4">
-                                                            <li><a href="#">Visit</a></li>
-                                                        </ul> -->
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <img class="img-fluid" src="images/blog/blog-img2.jpg" alt="image">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php
+        //    include('hub.php');
+        ?>
     </section>
 
     <!-- techs -->
-    <section class="iq-clients pt-0 mt-5">
+    <section class="iq-clients  pt-0 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -729,7 +528,7 @@
             </div>
         </div>
     </section>
-    <section class="iq-clients pt-5 mt-0" id="career">
+    <section class="iq-clients pt-5 mt-0 " id="career">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -746,10 +545,10 @@
                             <div class="clients-box">
                                 <!-- <img class="img-fluid client-img" src="images/clients/py.png" alt="image"
                                     data-toggle="tooltip" title="Python"> -->
-                                <h4 class=" font-weight-bold">Software Developer</h4>
+                                <h4 class="h3-responsive pb-3 font-weight-bold">Software Developer</h4>
                                 <p>If you posses good programming skills and to be part of the leading team in code optimization & face the most advanced challenges in the area of computer vision and machine learning, we invite you to join Neuronoids.</p>
                                 <div class="text-center">
-                                    <a href="" class=" mb-4" data-toggle="modal" data-target="#modalRegisterForm">Apply Now</a>
+                                    <a href="" class=" mb-4" data-toggle="modal" data-target="#applyform">Apply Now</a>
                                 </div>
                             </div>
                         </div>
@@ -757,13 +556,13 @@
                             <div class="clients-box">
                                 <!-- <img class="img-fluid client-img" src="images/clients/r.png" alt="image"
                                     data-toggle="tooltip" title="R language"> -->
-                                <h4 class=" font-weight-bold">Devops </h4>
+                                <h4 class="h3-responsive pb-3 font-weight-bold">Devops </h4>
                                 <p>If you posses good programming skills and to be part of the leading team in code optimization & face the most advanced challenges in the area of computer vision and machine learning, we invite you to join Neuronoids.</p>
                                 <!-- <a href="#contact">Apply Now</a> -->
 
 
                                 <div class="text-center">
-                                    <a href="" class=" mb-4" data-toggle="modal" data-target="#modalRegisterForm">Apply Now</a>
+                                    <a href="" class=" mb-4" data-toggle="modal" data-target="#applyform">Apply Now</a>
                                 </div>
                             </div>
                         </div>
@@ -775,49 +574,70 @@
         </div>
         </div>
     </section>
-    <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h4 class="modal-title w-100 font-weight-bold">Apply Now</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+    <!-- partners -->
+    <section class="iq-clients left-shap pt-0 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box">
+                        <h2 class="title font-weight-bold">Our <b class="headings"> Partners</b></h2>
+                        <!-- <p class="sub-title">We Work on Many Programming Languages and tools, Mainly on.</p> -->
+                    </div>
                 </div>
-                <div class="modal-body mx-3">
-                    <div class="md-form mb-5">
-                        <i class="fas fa-user prefix grey-text"></i>
-                        <input type="text" id="orangeForm-name" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
-                    </div>
-                    <div class="md-form mb-5">
-                        <i class="fas fa-envelope prefix grey-text"></i>
-                        <input type="email" id="orangeForm-email" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
-                    </div>
+            </div>
 
-                    <div class="md-form mb-4">
-                        <i class="fas fa-phone prefix grey-text"></i>
-                        <input type="number" id="orangeForm-number" class="form-control validate">
-                        <label data-error="wrong" data-success="right" for="orangeForm-number">Your Number</label>
-                    </div>
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-                        </div>
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="owl-carousel owl-carousel4" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true" data-items="6" data-items-laptop="5" data-items-tab="3" data-items-mobile="2" data-items-mobile-sm="1">
 
-                </div>
-                <div class="modal-footer d-flex justify-content-center">
-                    <button class="btn btn-deep-orange">Submit</button>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img" src="img/partners/zessta.png" alt="image" data-toggle="tooltip" title="Zessta">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img" src="img/partners/russel.png" alt="image" data-toggle="tooltip" title="McLEOD Russel">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img" src="img/partners/prime.png" alt="image" data-toggle="tooltip" title="Prime Classes">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img" src="img/partners/karnataka.jpg" alt="image" data-toggle="tooltip" title="Karnataka Forest Department">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img bg-dark" src="img/partners/flochat.png" alt="image" data-toggle="tooltip" title="Flochat">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img" src="img/partners/insights.png" alt="image" data-toggle="tooltip" title="Insights Of Data">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img bg-dark" src="img/partners/nviso.png" alt="image" data-toggle="tooltip" title="NVISO">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img" src="img/partners/thinci.png" alt="image" data-toggle="tooltip" title="thinci">
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
     <!-- contact form -->
     <!--Section: Contact v.2-->
     <section class="mb-4 pt-5" id="contact">
@@ -846,61 +666,7 @@
                     <div class="row">
                         <!--Grid column-->
                         <div class="col-md-12 mb-md-0 mb-5">
-                            <form name="" action="" method="post">
-
-                                <!--Grid row-->
-                                <div class="row">
-
-                                    <!--Grid column-->
-                                    <div class="col-md-6">
-                                        <div class="md-form mb-0">
-                                            <input type="text" id="name" name="name" class="form-control">
-                                            <label for="name" class="">Your name</label>
-                                        </div>
-                                    </div>
-                                    <!--Grid column-->
-
-                                    <!--Grid column-->
-                                    <div class="col-md-6">
-                                        <div class="md-form mb-0">
-                                            <input type="text" id="email" name="email" class="form-control">
-                                            <label for="email" class="">Your email</label>
-                                        </div>
-                                    </div>
-                                    <!--Grid column-->
-
-                                </div>
-                                <!--Grid row-->
-
-                                <!--Grid row-->
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="md-form mb-0">
-                                            <input type="text" id="number" name="number" class="form-control">
-                                            <label for="number" class="">Phone number</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--Grid row-->
-
-                                <!--Grid row-->
-                                <div class="row">
-
-                                    <!--Grid column-->
-                                    <div class="col-md-12">
-
-                                        <div class="md-form">
-                                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                            <label for="message">Your message</label>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!--Grid row-->
-                                <div class="text-center text-md-left">
-                                    <button class="btn btn-primary" type="submit" name="save">Send</button>
-                                </div>
-                            </form>
+                            <?php include('contact.php'); ?>
 
 
                             <div class="status"></div>
@@ -947,13 +713,13 @@
             <div class="row">
                 <div class="col-auto mr-auto">
                     <div class="footer-logo">
-                        <a href="index.html"><img src="img/logo/neuronoidsLogo.png" alt="img"></a>
+                        <a href="index.php"><img src="img/logo/neuronoidsLogo.png" alt="img"></a>
                     </div>
                 </div>
                 <div class="col-auto right-footer">
                     <ul class="nav footer-menu">
                         <li class="nav-item">
-                            <a class="nav-link " href="index.html">Home</a>
+                            <a class="nav-link " href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>
@@ -1008,7 +774,7 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <div class="footer-logo mb-3">
-                        <a href="index.html"><img src="img/logo/logo.png" alt="img"></a>
+                        <a href="index.php"><img src="img/logo/logo.png" alt="img"></a>
                     </div>
                     <!-- <h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6> -->
                     <p>We at Neuronoids have deep roots into developing custom algorithms on the need basis and building complete processing pipeline end to end.</p>
@@ -1041,7 +807,7 @@
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
                     <p>
-                        <a href="index.html">Home</a>
+                        <a href="index.php">Home</a>
                     </p>
                     <p>
                         <a href="#wethink">What we think</a>
@@ -1136,7 +902,31 @@
     <div id="back-to-top">
         <a class="top" id="top" href="#top"><span>Scroll Up</span> <i class="fas fa-arrow-up"></i></a>
     </div>
+    <!-- fixed form -->
 
+    <div id="feedback">
+        <a href="#!" data-toggle="modal" data-target="#contactform">Get in Touch</a>
+    </div>
+    <div class="modal cus-model fade" id="contactform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalLabel">Get In Touch</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <?php
+                    include('contact.php');
+                    ?>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
         $('.baSlider').baSlider();
     </script>
@@ -1188,30 +978,30 @@
             })
         })
     </script>
-        <script>
-            $(document).ready(function() {
-                var owl = $('.owl-carousel4');
-                owl.owlCarousel({
-                    margin: 10,
-                    nav: true,
-                    loop: true,
-                    autoplay: true,
-                    autoplayTimeout: 3000,
-                    autoplayHoverPause: false,
-                    responsive: {
-                        0: {
-                            items: 3
-                        },
-                        600: {
-                            items: 5
-                        },
-                        1000: {
-                            items: 6
-                        }
+    <script>
+        $(document).ready(function() {
+            var owl = $('.owl-carousel4');
+            owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 3
+                    },
+                    600: {
+                        items: 5
+                    },
+                    1000: {
+                        items: 6
                     }
-                })
+                }
             })
-        </script>
+        })
+    </script>
     <script>
         $(document).ready(function() {
             var owl = $('.owl-carousel3');

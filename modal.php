@@ -215,7 +215,7 @@
             </div>
             <div class="modal-body text-center">
                 <div class="future-img">
-                    <img src="img/feature/turn.png" class="img-fluid mb-4" alt="">
+                    <img src="img/feature/mach.png" class="img-fluid mb-4" alt="">
                 </div>
                 <p class="mb-0">Machine Learning is a part of Artificial Intelligence. It builds algorithms that allow computers to learn how to perform tasks from data instead of requiring a programmer to write code for those tasks. Machine Learning does this by generalizing from examples and it is a more cost-effective and faster approach when Big Data is involved.</p>
 
@@ -272,6 +272,94 @@
         </div>
     </div>
 </div>
+<!-- apply form -->
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Apply Now</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                        <i class="fas fa-user prefix grey-text"></i>
+                        <input type="text" id="orangeForm-name" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+                    </div>
+                    <div class="md-form mb-5">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input type="email" id="orangeForm-email" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+                    </div>
+
+                    <div class="md-form mb-4">
+                        <i class="fas fa-phone prefix grey-text"></i>
+                        <input type="number" id="orangeForm-number" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="orangeForm-number">Your Number</label>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-deep-orange">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="modal fade" id="applyform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Apply Now</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                        <i class="fas fa-user prefix grey-text"></i>
+                        <input type="text" id="orangeForm-name" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+                    </div>
+                    <div class="md-form mb-5">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input type="email" id="orangeForm-email" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+                    </div>
+
+                    <div class="md-form mb-4">
+                        <i class="fas fa-phone prefix grey-text"></i>
+                        <input type="number" id="orangeForm-number" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="orangeForm-number">Your Number</label>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-deep-orange">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
