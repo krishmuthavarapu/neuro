@@ -65,7 +65,7 @@
 
 <body>
     <?php
-    include('config.php');
+    // include('config.php');
     ?>
 
     <!-- Start your project here-->
