@@ -282,7 +282,7 @@
     .iq-frequently {
         padding: 60px 50px 40px
     }
-    .iq-video {
+    .neu-video {
         left: 10px
     }
     .banner {
@@ -346,7 +346,7 @@
     .iq-coming .button {
         bottom: 0
     }
-    .iq-video {
+    .neu-video {
         right: -5px;
         top: -29px
     }
@@ -371,14 +371,14 @@
     .Service-shap:before {
         width: 82%
     }
-    .iq-detail-box img {
+    .neu-detail-box img {
         margin-top: 30px;
         width: 100%
     }
     .error-box {
         height: 500px
     }
-    .blogdetailbox .iq-blog-entry .media-box li {
+    .blogdetailbox .neu-blog-entry .media-box li {
         display: inline-block
     }
 }

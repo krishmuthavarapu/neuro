@@ -286,7 +286,7 @@ header .navbar-toggler:not(:disabled):not(.disabled) {
     position: relative
 }
 
-.iq-video {
+.neu-video {
     border: 1px solid #46c894;
     display: inline-block;
     width: 48px;
@@ -300,7 +300,7 @@ header .navbar-toggler:not(:disabled):not(.disabled) {
     background-color: #fff
 }
 
-.iq-video i {
+.neu-video i {
     margin-left: 5px
 }
 
@@ -589,10 +589,16 @@ header .navbar-toggler:not(:disabled):not(.disabled) {
     background-color: #297557
 }
 
-.iq-blog .owl-carousel .owl-dots {
+.neu-blog .owl-carousel .owl-dots {
     display: none
 }
-
+.aply-a, 
+.aply-a:hover{
+    background: #71b93a;
+    border-radius: 22px;
+    color: #ffffff;
+    padding: 10px;
+}
 
 /*blog end */
 /* clients */

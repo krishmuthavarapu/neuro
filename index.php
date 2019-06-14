@@ -65,7 +65,7 @@
 
 <body>
     <?php
-    include('config.php');
+    // include('config.php');
     ?>
 
     <!-- Start your project here-->
@@ -156,7 +156,7 @@
                         <div class="align-items-center d-flex">
                             <a class="btn-neuro button btn" href="#whowe">Read More</a>
                             <!-- <div class="play-video iq-asked-img">
-                            <a href="video/01.mp4" class="iq-video popup-youtube"><i
+                            <a href="video/01.mp4" class="neu-video popup-youtube"><i
                                     class="ion-ios-play-outline"></i></a>
                         </div> -->
                         </div>
@@ -389,7 +389,7 @@
             </div>
         </div>
     </section> -->
-    <section class="iq-blog pt-0 pt-5 conection-shap" id="wedo">
+    <section class="neu-blog pt-0 pt-5 conection-shap" id="wedo">
         <div class="container pt-4">
             <div class="row">
                 <div class="col-sm-12">
@@ -548,7 +548,7 @@
                                 <h4 class="h3-responsive pb-3 font-weight-bold">Software Developer</h4>
                                 <p>If you posses good programming skills and to be part of the leading team in code optimization & face the most advanced challenges in the area of computer vision and machine learning, we invite you to join Neuronoids.</p>
                                 <div class="text-center">
-                                    <a href="" class=" mb-4" data-toggle="modal" data-target="#applyform">Apply Now</a>
+                                    <a href="" class=" mb-4 aply-a" data-toggle="modal" data-target="#applyform">Apply Now</a>
                                 </div>
                             </div>
                         </div>
@@ -562,7 +562,7 @@
 
 
                                 <div class="text-center">
-                                    <a href="" class=" mb-4" data-toggle="modal" data-target="#applyform">Apply Now</a>
+                                    <a href="" class=" mb-4 aply-a" data-toggle="modal" data-target="#applyform">Apply Now</a>
                                 </div>
                             </div>
                         </div>
@@ -911,7 +911,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header ">
-                    <h5 class="modal-title" id="exampleModalLabel">Get In Touch</h5>
+                    <h5 class="modal-title text-center w-100 font-weight-bold " id="exampleModalLabel">Get In Touch</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -921,9 +921,9 @@
                     include('contact.php');
                     ?>
                 </div>
-                <div class="modal-footer">
+                <!-- <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
