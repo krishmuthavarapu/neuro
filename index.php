@@ -65,7 +65,7 @@
 
 <body>
     <?php
-    // include('config.php');
+    include('config.php');
     ?>
 
     <!-- Start your project here-->
@@ -651,7 +651,7 @@
 
                 $result = mysqli_query($conn, $sql);
 
-                //   header('Location:index.php');
+                  header('Location:index.php');
             }
 
             ?>
