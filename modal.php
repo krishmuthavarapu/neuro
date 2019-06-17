@@ -320,6 +320,7 @@
 <div class="modal fade" id="applyform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
+                <form method="post" id="form-res" enctype="multipart/form-data" action="ajaxupload.php">
                 <div class="modal-header text-center">
                     <h4 class="modal-title w-100 font-weight-bold">Apply Now</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -329,18 +330,18 @@
                 <div class="modal-body mx-3">
                     <div class="md-form mb-5">
                         <i class="fas fa-user prefix grey-text"></i>
-                        <input type="text" id="orangeForm-name" class="form-control validate">
+                        <input type="text" id="orangeForm-name" name="name" class="form-control validate">
                         <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
                     </div>
                     <div class="md-form mb-5">
                         <i class="fas fa-envelope prefix grey-text"></i>
-                        <input type="email" id="orangeForm-email" class="form-control validate">
+                        <input type="email" id="orangeForm-email" name="email" class="form-control validate">
                         <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
                     </div>
 
                     <div class="md-form mb-4">
                         <i class="fas fa-phone prefix grey-text"></i>
-                        <input type="number" id="orangeForm-number" class="form-control validate">
+                        <input type="number" id="orangeForm-number" name="number" class="form-control validate">
                         <label data-error="wrong" data-success="right" for="orangeForm-number">Your Number</label>
                     </div>
                     <div class="input-group">
@@ -348,15 +349,16 @@
                             <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
                         </div>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                            <input type="file" class="custom-file-input" name="image"  id="uploadFile" aria-describedby="inputGroupFileAddon01">
+                            <label class="custom-file-label" for="uploadFile">Choose file</label>
                         </div>
                     </div>
 
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
-                    <button class="btn btn-deep-orange">Submit</button>
+                    <button class="btn btn-deep-orange" type="submit" value="upload">Submit</button>
                 </div>
+</form>
             </div>
         </div>
     </div>

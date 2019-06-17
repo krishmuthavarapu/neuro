@@ -65,7 +65,7 @@
 
 <body>
     <?php
-    // include('config.php');
+    include('config.php');
     ?>
 
     <!-- Start your project here-->
@@ -94,7 +94,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#!">Login</a></li>
-                            <li class="breadcrumb-item" aria-current="page"><a href="#!">Register</a></li>
+                            <li class="breadcrumb-item" aria-current="page"><a href="admin/index.php">Register</a></li>
                         </ol>
                         <!-- <div class="request-btn"><a href="#">Request a Demo</a></div> -->
                     </nav>
@@ -209,29 +209,29 @@
             <div class="row mt-3">
                 <div class="col-lg-6 text ">
                     <div class="p-5 future-services  wow slideInUp" data-wow-duration="0.5s">
-                    <h4 class="font-weight-bold text-center">Our <b class="headings">Mission</b></h4>
-                    <p class="mt-3">Providing latest technology access in Machine Learning, computer vision and data analytics
-                        space to our customers with timely execution and reasonable cost by engaging them closely
-                        and making our clients excel in their business and exceeding their expectation by building more
-                        customized solution for them</p>
+                        <h4 class="font-weight-bold text-center">Our <b class="headings">Mission</b></h4>
+                        <p class="mt-3">Providing latest technology access in Machine Learning, computer vision and data analytics
+                            space to our customers with timely execution and reasonable cost by engaging them closely
+                            and making our clients excel in their business and exceeding their expectation by building more
+                            customized solution for them</p>
                     </div>
                 </div>
                 <div class="col-lg-6 text ">
-                   <div class="p-5 future-services  wow slideInUp" data-wow-duration="0.5s">
-                   <h4 class="font-weight-bold text-center">Our <b class="headings">Vision</b></h4>
-                    <p class="mt-3">
-                        To increase the reach and access of result oriented Insights, by reducing the research and
-                        investigating time of machine learning seekers, by building unified frame works and platforms
-                        to become leader and trusted solution provider in the technology of molding intelligence and
-                        efficiency into the system.
-                    </p>
-                   </div>
+                    <div class="p-5 future-services  wow slideInUp" data-wow-duration="0.5s">
+                        <h4 class="font-weight-bold text-center">Our <b class="headings">Vision</b></h4>
+                        <p class="mt-3">
+                            To increase the reach and access of result oriented Insights, by reducing the research and
+                            investigating time of machine learning seekers, by building unified frame works and platforms
+                            to become leader and trusted solution provider in the technology of molding intelligence and
+                            efficiency into the system.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <?php include('modal.php'); ?>
-  
+
     <section class="how-it-works left-shap pt-5 pb-4" id="wethink">
         <div class="container pt-2">
             <div class="row">
@@ -651,7 +651,7 @@
 
                 $result = mysqli_query($conn, $sql);
 
-                  header('Location:index.php');
+                header('Location: index.php');
             }
 
             ?>
