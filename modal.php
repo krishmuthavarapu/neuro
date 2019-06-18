@@ -170,7 +170,7 @@
             </div>
             <div class="modal-body text-center">
                 <div class="future-img">
-                    <img src="img/feature/bp.png" class="img-fluid mb-4" alt="">
+                    <img src="img/feature/data.png" class="img-fluid mb-4" alt="">
                 </div>
                 <p class="mb-0">Neuronoids turns technology into business outcomes by delivering Information management, business intelligence and analytic solutions under one umbrella.  We collaborate with our clients in building their proprietary solution for their hidden data.</p>
 
@@ -320,7 +320,7 @@
 <div class="modal fade" id="applyform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <form method="post" id="form-res" enctype="multipart/form-data" action="ajaxupload.php">
+                <form method="POST" id="form-res" enctype="multipart/form-data" action="ajaxupload.php">
                 <div class="modal-header text-center">
                     <h4 class="modal-title w-100 font-weight-bold">Apply Now</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">

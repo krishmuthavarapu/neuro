@@ -1,4 +1,5 @@
-<form name="" action="" method="post">
+
+<form name="" action="" method="POST">
 
 <!--Grid row-->
 <div class="row">
@@ -57,6 +58,6 @@
 </div>
 <!--Grid row-->
 <div class="text-center text-md-left">
-    <button class="btn btn-primary" type="submit" name="save">Send</button>
+    <button class="btn btn-primary" type="submit" value="send" id="btncontact" name="save">Send</button>
 </div>
 </form>

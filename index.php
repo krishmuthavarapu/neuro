@@ -1,3 +1,76 @@
+<?php
+/**
+ * This example shows how to handle a simple contact form.
+ */
+//Import PHPMailer classes into the global namespace
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+$msg = '';
+//Don't run this unless we're handling a form submission
+if (array_key_exists('email', $_POST)) {
+    date_default_timezone_set('Etc/UTC');
+    require 'vendor/autoload.php';
+    //Create a new PHPMailer instance
+    $mail = new PHPMailer;
+    //Tell PHPMailer to use SMTP - requires a local mail server
+    //Faster and safer than using mail()
+    $mail->isSMTP();
+    $mail->Host = "tls://smtp.gmail.com";
+
+    $mail->Port = 587;  
+
+    $mail->SMTPAuth = true;
+    $mail->Username = 'mskc999@gmail.com';
+    $mail->Password = '9908547266msk';
+    $mail->SMTPSecure = 'tls';
+    $mail->smtpConnect(
+        array(
+            "ssl" => array(
+                "verify_peer" => false,
+                "verify_peer_name" => false,
+                "allow_self_signed" => true
+            )
+        )
+    );
+    
+    // $mail->Port = 25;
+    //Use a fixed address in your own domain as the from address
+    //**DO NOT** use the submitter's address here as it will be forgery
+    //and will cause your messages to fail SPF checks
+    $mail->setFrom('mskc999@gmail.com', 'First Last');
+    //Send the message to yourself, or whoever should receive contact for submissions
+    $mail->addAddress('mskc999@gmail.com', 'John Doe');
+    //Put the submitter's address in a reply-to header
+    //This will fail if the address provided is invalid,
+    //in which case we should ignore the whole request
+    if ($mail->addReplyTo($_POST['email'], $_POST['name'])) {
+        $mail->Subject = 'PHPMailer contact form';
+        //Keep it simple - don't use HTML
+        $mail->isHTML(false);
+        //Build a simple message body
+        $mail->Body = <<<EOT
+Email: {$_POST['email']}
+Name: {$_POST['name']}
+Number: {$_POST['number']}
+subject: {$_POST['subject']}
+Message: {$_POST['message']}
+EOT;
+        //Send the message, check for errors
+        if (!$mail->send()) {
+            //The reason for failing to send will be in $mail->ErrorInfo
+            //but you shouldn't display errors to users - process the error, log it on your server.
+            $msg = 'Sorry, something went wrong. Please try again later.';
+        } else {
+            $msg = 'Message sent! Thanks for contacting us.';
+        }
+    } else {
+        $msg = 'Invalid email address, message ignored.';
+    }
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -415,7 +488,7 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="future-services text-center wow slideInUp" data-wow-duration="1s">
                         <div class="future-img">
-                            <img src="img/feature/bp.png" class="img-fluid mb-4" alt="">
+                            <img src="img/feature/data.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Data Analytics</h4>
                         <p class="mb-0">Neuronoids turns technology into business outcomes by delivering Information ...</p>
@@ -588,44 +661,44 @@
 
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="owl-carousel owl-carousel4" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true" data-items="6" data-items-laptop="5" data-items-tab="3" data-items-mobile="2" data-items-mobile-sm="1">
+                    <div class="owl-carousel owl-carousel4 " data-autoplay="true" data-loop="true" data-nav="false" data-dots="true" data-items="6" data-items-laptop="5" data-items-tab="3" data-items-mobile="2" data-items-mobile-sm="1">
 
-                        <div class="item">
+                        <div class="item align-items-center">
                             <div class="clients-box">
                                 <img class="img-fluid client-img" src="img/partners/zessta.png" alt="image" data-toggle="tooltip" title="Zessta">
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item align-items-center">
                             <div class="clients-box">
-                                <img class="img-fluid client-img" src="img/partners/russel.png" alt="image" data-toggle="tooltip" title="McLEOD Russel">
+                                <img class="img-fluid client-img" src="img/partners/russel1.png" alt="image" data-toggle="tooltip" title="McLEOD Russel">
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item align-items-center">
                             <div class="clients-box">
                                 <img class="img-fluid client-img" src="img/partners/prime.png" alt="image" data-toggle="tooltip" title="Prime Classes">
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item align-items-center">
                             <div class="clients-box">
-                                <img class="img-fluid client-img" src="img/partners/karnataka.jpg" alt="image" data-toggle="tooltip" title="Karnataka Forest Department">
+                                <img class="img-fluid client-img" src="img/partners/karnataka1.jpg" alt="image" data-toggle="tooltip" title="Karnataka Forest Department">
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item align-items-center">
                             <div class="clients-box">
-                                <img class="img-fluid client-img bg-dark" src="img/partners/flochat.png" alt="image" data-toggle="tooltip" title="Flochat">
+                                <img class="img-fluid client-img bg-dark" src="img/partners/flochat1.png" alt="image" data-toggle="tooltip" title="Flowchart">
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item align-items-center">
                             <div class="clients-box">
-                                <img class="img-fluid client-img" src="img/partners/insights.png" alt="image" data-toggle="tooltip" title="Insights Of Data">
+                                <img class="img-fluid client-img" src="img/partners/insights1.png" alt="image" data-toggle="tooltip" title="Insights Of Data">
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item align-items-center">
                             <div class="clients-box">
                                 <img class="img-fluid client-img bg-dark" src="img/partners/nviso.png" alt="image" data-toggle="tooltip" title="NVISO">
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="item align-items-center">
                             <div class="clients-box">
                                 <img class="img-fluid client-img" src="img/partners/thinci.png" alt="image" data-toggle="tooltip" title="thinci">
                             </div>
@@ -646,9 +719,9 @@
 
             if (isset($_POST['save'])) {
                 $mysqltime = date_create()->format('Y-m-d H:i:s');
-                $sql = "INSERT INTO users(name, email, number, message, date)
-    VALUES ('" . $_POST["name"] . "','" . $_POST["email"] . "', '" . $_POST["number"] . "', '" . $_POST["message"] . "', '" . $mysqltime . "')";
-
+                $sql = "INSERT INTO users(name, email, number, subject, message, date)
+    VALUES ('" . $_POST["name"] . "','" . $_POST["email"] . "', '" . $_POST["number"] . "', '" . $_POST["subject"] . "', '" . $_POST["message"] . "', '" . $mysqltime . "')";
+ 
                 $result = mysqli_query($conn, $sql);
 
                 header('Location: index.php');
@@ -813,7 +886,7 @@
                         <a href="#wethink">What we think</a>
                     </p>
                     <p>
-                        <a href="#whatwe">What We do</a>
+                        <a href="#wedo">What We do</a>
                     </p>
                     <p>
                         <a href="#contact">Find Us</a>
@@ -907,7 +980,7 @@
     <div id="feedback">
         <a href="#!" data-toggle="modal" data-target="#contactform">Get in Touch</a>
     </div>
-    <div class="modal cus-model fade" id="contactform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal cus-model fade " id="contactform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header ">
