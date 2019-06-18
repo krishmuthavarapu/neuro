@@ -21,7 +21,7 @@
                     <h1 class="h4 text-gray-900 mb-4">Login here!</h1>
                     <?php 
                     if (isset($_SESSION['status']) && $_SESSION['status'] != '') {
-                      echo '<h4 class="bg-warning">' . $_SESSION['status'] . '</h4>';
+                      echo '<h4 class="bg-danger text-white">' . $_SESSION['status'] . '</h4>';
                       unset($_SESSION['status']);
                   }
                     ?>

@@ -227,7 +227,7 @@ EOT;
                         <p class=" mb-4">We at Neuronoids have deep roots into developing custom algorithms on the
                             need basis and building complete processing pipeline end to end. </p>
                         <div class="align-items-center d-flex">
-                            <a class="btn-neuro button btn" href="#whowe">Read More</a>
+                            <a class=" button btn br-90 cus-grad" href="#whowe">Read More</a>
                             <!-- <div class="play-video iq-asked-img">
                             <a href="video/01.mp4" class="neu-video popup-youtube"><i
                                     class="ion-ios-play-outline"></i></a>
@@ -978,7 +978,7 @@ EOT;
     <!-- fixed form -->
 
     <div id="feedback">
-        <a href="#!" data-toggle="modal" data-target="#contactform">Get in Touch</a>
+        <a href="#!" data-toggle="modal" class="br-90 cus-grad" data-target="#contactform">Get in Touch</a>
     </div>
     <div class="modal cus-model fade " id="contactform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -989,7 +989,7 @@ EOT;
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body text-center">
+                <div class="modal-body">
                     <?php
                     include('contact.php');
                     ?>

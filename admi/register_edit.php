@@ -1,5 +1,6 @@
 <?php
-session_start();
+include('security.php');
+
 include('includes/header.php'); ?>
 
 <?php include('includes/navbar.php'); ?>
