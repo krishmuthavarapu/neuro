@@ -7,6 +7,16 @@ include('includes/header.php'); ?>
 
 <div class="container">
     <div class="row">
+    <?php
+    if (isset($_SESSION['success']) && $_SESSION['success'] != '') {
+        echo '<h4>' . $_SESSION['success'] . '</h4>';
+        unset($_SESSION['success']);
+    }
+    if (isset($_SESSION['status']) && $_SESSION['status'] != '') {
+        echo '<h4 class="bg-warning">' . $_SESSION['status'] . '</h4>';
+        unset($_SESSION['status']);
+    }
+    ?>
         <?php
         $connection = mysqli_connect("localhost", "root", "", "neuronoids");
         $query = "SELECT * FROM users";
@@ -22,6 +32,7 @@ include('includes/header.php'); ?>
                         <th>Number</th>
                         <th>Message</th>
                         <th>Date</th>
+                        <th>Delete</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -37,6 +48,12 @@ include('includes/header.php'); ?>
                                 <td><?php echo $row['message']; ?></td>
 
                                 <td><?php echo $row['date']; ?></td>
+                                <td>
+                                    <form action="code.php" method="POST">
+                                    <input type="hidden" name="delete_Id" value="<?php echo $row['Id'];?>">
+                                    <button class="btn-danger " name="delete_ud" type="submit">Delete</button>
+                                    </form>
+                                </td>
 
                                 <!-- <td><button class="btn-success " type="submit">Edit</button></td>
                                                         <td><button class="btn-danger " type="submit">Delete</button></td> -->

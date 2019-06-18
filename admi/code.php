@@ -80,8 +80,19 @@ if(isset($_POST['login_btn']))
     }
 }
 
-
-
+if(isset($_POST['delete_ud']))
+{
+    $id = $_POST['delete_Id'];
+    $query = "DELETE FROM users WHERE Id = '$id' ";
+    $query_run = mysqli_query($connection, $query);
+    if($query_run){
+        $_SESSION['success']="Your data is deleted";
+        header('Location: userdata.php');
+    }else{
+     $_SESSION['status']="Your data NOT deleted";
+     header('Location: userdata.php');    
+     }
+    }
 
 ?>
 

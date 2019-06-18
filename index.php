@@ -167,7 +167,7 @@ EOT;
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="#!">Login</a></li>
-                            <li class="breadcrumb-item" aria-current="page"><a href="admin/index.php">Register</a></li>
+                            <li class="breadcrumb-item" aria-current="page"><a href="admi/index.php">Register</a></li>
                         </ol>
                         <!-- <div class="request-btn"><a href="#">Request a Demo</a></div> -->
                     </nav>
@@ -224,7 +224,7 @@ EOT;
                     <div class="banner-text">
                         <h5 class="main-color mb-3">Welcome to</h5>
                         <h1 class="font-weight-bold  mb-3">Neuronoids</h1>
-                        <p class=" mb-4">We at Neuronoids have deep roots into developing custom algorithms on the
+                        <p class=" mb-4 jus">We at Neuronoids have deep roots into developing custom algorithms on the
                             need basis and building complete processing pipeline end to end. </p>
                         <div class="align-items-center d-flex">
                             <a class=" button btn br-90 cus-grad" href="#whowe">Read More</a>
@@ -266,7 +266,7 @@ EOT;
                 <div class="col-md-6 text-left align-self-center">
                     <div class="ml-3 mt-3">
                         <!-- <h3 class="font-weight-bold">Fully dedicated to finding the best solutions.</h3> -->
-                        <p class="mt-3">
+                        <p class="mt-3 jus">
                             We offer services in the areas of Machine Learning, Computer Vision, Natural Language
                             Processing and Text Analytics. The team involved has vast experience in driving an idea from an
                             imagination to reality. We also provide services in accelerating the algorithms both by
@@ -283,7 +283,7 @@ EOT;
                 <div class="col-lg-6 text ">
                     <div class="p-5 future-services  wow slideInUp" data-wow-duration="0.5s">
                         <h4 class="font-weight-bold text-center">Our <b class="headings">Mission</b></h4>
-                        <p class="mt-3">Providing latest technology access in Machine Learning, computer vision and data analytics
+                        <p class="mt-3 jus">Providing latest technology access in Machine Learning, computer vision and data analytics
                             space to our customers with timely execution and reasonable cost by engaging them closely
                             and making our clients excel in their business and exceeding their expectation by building more
                             customized solution for them</p>
@@ -292,7 +292,7 @@ EOT;
                 <div class="col-lg-6 text ">
                     <div class="p-5 future-services  wow slideInUp" data-wow-duration="0.5s">
                         <h4 class="font-weight-bold text-center">Our <b class="headings">Vision</b></h4>
-                        <p class="mt-3">
+                        <p class="mt-3 jus">
                             To increase the reach and access of result oriented Insights, by reducing the research and
                             investigating time of machine learning seekers, by building unified frame works and platforms
                             to become leader and trusted solution provider in the technology of molding intelligence and
@@ -324,7 +324,7 @@ EOT;
                             <img src="img/feature/ad.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Algorithm Research</h4>
-                        <p class="mb-0">We do research or implement the algorithms as per the need...</p>
+                        <p class="mb-0 jus">We do research or implement the algorithms as per the need...</p>
                         <a href="#!" data-toggle="modal" data-target="#think1">Read more</a>
                     </div>
                 </div>
@@ -334,7 +334,7 @@ EOT;
                             <img src="img/feature/bp.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Building Pipeline</h4>
-                        <p class="mb-0">We implement the pipeline fitting into common frame work...</p>
+                        <p class="mb-0 jus">We implement the pipeline fitting into common frame work...</p>
                         <a href="#!" data-toggle="modal" data-target="#think2">Read more</a>
 
                     </div>
@@ -345,7 +345,7 @@ EOT;
                             <img src="img/feature/dev.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Development</h4>
-                        <p class="mb-0">We implement the pipeline fitting into common frame work...</p>
+                        <p class="mb-0 jus">We implement the pipeline fitting into common frame work...</p>
                         <a href="#!" data-toggle="modal" data-target="#think3">Read more</a>
 
                     </div>
@@ -356,7 +356,7 @@ EOT;
                             <img src="img/feature/turn.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Idea Validation</h4>
-                        <p class="mb-0">We encourage our clients to come up with their needs. We take...</p>
+                        <p class="mb-0 jus">We encourage our clients to come up with their needs. We take...</p>
                         <a href="#!" data-toggle="modal" data-target="#think4">Read more</a>
 
                     </div>
@@ -367,7 +367,7 @@ EOT;
                             <img src="img/feature/pip.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Pipeline Architecture</h4>
-                        <p class="mb-0">
+                        <p class="mb-0 jus">
 
                             The pipeline architecture is about proposing a pipeline of the...</p>
                         <a href="#!" data-toggle="modal" data-target="#think5">Read more</a>
@@ -380,7 +380,7 @@ EOT;
                             <img src="img/feature/mach.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Pipeline Acceleration</h4>
-                        <p class="mb-0">Most of the computationally intensive tasks are...</p>
+                        <p class="mb-0 jus">Most of the computationally intensive tasks are...</p>
                         <a href="#!" data-toggle="modal" data-target="#think6">Read more</a>
 
                     </div>

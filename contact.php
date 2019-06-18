@@ -38,7 +38,7 @@
     </div>
 </div>
 <!--Grid row-->
-<!-- <div class="row">
+<div class="row">
 <div class="col-md-12">
         <div class="md-form mb-0">
         <i class="fas fa-star prefix grey-text"></i>
@@ -46,7 +46,7 @@
             <label for="subject" class="">Subject</label>
         </div>
     </div>
-</div> -->
+</div>
 <!--Grid row-->
 <div class="row">
 

@@ -6,6 +6,7 @@
     src: local('Chrobot Regular'), url('Chrobot.woff') format('woff');
     }
   body {
+      text-align: justify'
     /* font-family: sans-serif; */
 
     /* font-family: Chrobot Regular ; */
@@ -16,6 +17,9 @@
     color: rgb(0, 0, 0)  */
     /* color: #fff !important;
     background: rgb(23, 31, 22) */
+}
+.jus{
+    text-align: justify !important;
 }
 .btn-secondary {
     background-color: #6c7a74!important;
