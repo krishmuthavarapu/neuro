@@ -41,7 +41,8 @@
 <div class="row">
 <div class="col-md-12">
         <div class="md-form mb-0">
-        <i class="fas fa-star prefix grey-text"></i>
+        <!-- <i class="fas fa-star prefix grey-text"></i> -->
+        <i class="fas fa-envelope-open-text prefix grey-text"></i>
             <input type="text" id="subject" name="subject" class="form-control" required>
             <label for="subject" class="">Subject</label>
         </div>

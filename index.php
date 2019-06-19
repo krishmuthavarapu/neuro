@@ -81,7 +81,7 @@ EOT;
     <title>Neuronoid</title>
     <link rel="shortcut icon" href="img/logo/neuronoidsimage.png" type="image/x-icon">
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Lato|Montserrat|Open+Sans&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -94,18 +94,15 @@ EOT;
     <link rel="stylesheet" href="css/responsive.css">
     <!-- owl -->
     <link rel="stylesheet" href="owl/assets/owlcarousel/assets/owl.carousel.min.css">
-    <!-- <link rel="stylesheet" href="owl/assets/owlcarousel/assets/owl.theme.default.min.css"> -->
     <!-- owl -->
     <script src="owl/assets/vendors/jquery.min.js"></script>
     <script src="owl/assets/owlcarousel/owl.carousel.js"></script>
-
     <!-- ba slider -->
-    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-
-    <link rel="stylesheet" type="text/css" href="src/jquery.baSlider.css">
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
-
     <script src="src/jquery.baSlider.js"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="src/jquery.baSlider.css">
+
+
     <style>
         .container-ba {
             margin: 25px auto;
@@ -138,15 +135,15 @@ EOT;
 
 <body>
     <?php
-    include('config.php');
+    include('db/config.php');
     ?>
 
     <!-- Start your project here-->
-    <!-- <div id="loading">
+    <div id="loading">
     <div id="loading-center">
-        <img src="img/logo/neuronoidsimage.png" alt="loder">
+        <img src="img/logo/neuronoidsimage.png" class="load-rotate" alt="loder">
     </div>
-</div> -->
+</div>
     <!-- header -->
 
     <header>
@@ -157,19 +154,14 @@ EOT;
                         <button class="btn btn-secondary btn-neuro btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             English
                         </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#!">Spanish</a>
-                            <a class="dropdown-item" href="#!">French</a>
-                        </div>
                     </div>
                 </div>
                 <div class="col-auto sub-main">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#!">Login</a></li>
-                            <li class="breadcrumb-item" aria-current="page"><a href="admi/index.php">Register</a></li>
+                            <li class="breadcrumb-item"><a href="admi/index.php">Login</a></li>
+                            <!-- <li class="breadcrumb-item" aria-current="page"><a href="admi/index.php">Register</a></li> -->
                         </ol>
-                        <!-- <div class="request-btn"><a href="#">Request a Demo</a></div> -->
                     </nav>
                 </div>
             </div>
@@ -199,17 +191,10 @@ EOT;
                                 <li class="nav-item">
                                     <a class="nav-link" href="#career">Careers</a>
                                 </li>
-                                <!-- <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        More
-                                    </a>
-                                    <div class="dropdown-menu " style="min-width: 8rem" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#!">Page1</a>
-                                        <a class="dropdown-item" href="#!">Page2</a>
-                                        <a class="dropdown-item" href="#!">Page3</a>
-                                    </div>
-                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="modal" data-target="#demo" href="#!">Demo</a>
+                                </li>
+
                             </ul>
                         </div>
                     </nav>
@@ -228,16 +213,12 @@ EOT;
                             need basis and building complete processing pipeline end to end. </p>
                         <div class="align-items-center d-flex">
                             <a class=" button btn br-90 cus-grad" href="#whowe">Read More</a>
-                            <!-- <div class="play-video iq-asked-img">
-                            <a href="video/01.mp4" class="neu-video popup-youtube"><i
-                                    class="ion-ios-play-outline"></i></a>
-                        </div> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="banner-type wow fadeInRight">
-                        <img class="img-fluid banner-person" src="img/banner/03.png" alt="img">
+                        <img class="img-fluid banner-person" src="img/banner/03n1.png" alt="img">
                     </div>
                 </div>
             </div>
@@ -245,13 +226,12 @@ EOT;
     </div>
     <!-- baneer end -->
     <!-- services or what we think -->
-    <section class="pt-0 wethink pt-5 mb-lg-5 conection-shap " id="whowe">
+    <section class="pt-0 wethink pt-5 mb-lg-5 conection-float " id="whowe">
         <div class="container pt-2">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="title-box">
                         <h2 class="title font-weight-bold"><b class="headings">Who</b> we are</h2>
-                        <!-- <p class="sub-title">Simply dummy has been the industry's standard dummy text.</p> -->
                     </div>
                 </div>
             </div>
@@ -261,6 +241,8 @@ EOT;
                 <div class="col-md-6">
                     <div class="fully-dedicated wow slideInLeft">
                         <img src="images/wethink/04.png" class="img-fluid " alt="">
+                        <!-- <img class="img-fluid " src="img/feature/teamwork.png" alt="img"> -->
+
                     </div>
                 </div>
                 <div class="col-md-6 text-left align-self-center">
@@ -275,29 +257,37 @@ EOT;
                             lines.
                         </p>
                         <p>Our Vision and Mission Statements are..</p>
-                        <!-- <a class="button mt-3 btn btn-neuro" href="#">Get Started</a> -->
                     </div>
+                    
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col-lg-6 text ">
-                    <div class="p-5 future-services  wow slideInUp" data-wow-duration="0.5s">
+                    <div class="p-5 future-services  wow slideInUp text-center" data-wow-duration="0.5s">
                         <h4 class="font-weight-bold text-center">Our <b class="headings">Mission</b></h4>
+                        <!-- <div class="future-img">
+                            <img src="img/feature/mission.png" style="width:20%" class="mt-4 img-fluid mb-2" alt="">
+                        </div> -->
                         <p class="mt-3 jus">Providing latest technology access in Machine Learning, computer vision and data analytics
                             space to our customers with timely execution and reasonable cost by engaging them closely
                             and making our clients excel in their business and exceeding their expectation by building more
                             customized solution for them</p>
+                        <!-- <a href="#!" data-toggle="modal" data-target="#mission">Read more</a> -->
                     </div>
                 </div>
                 <div class="col-lg-6 text ">
-                    <div class="p-5 future-services  wow slideInUp" data-wow-duration="0.5s">
+                    <div class="p-5 future-services  wow slideInUp text-center" data-wow-duration="0.5s">
                         <h4 class="font-weight-bold text-center">Our <b class="headings">Vision</b></h4>
+                        <!-- <div class="future-img">
+                            <img src="img/feature/vision.png" style="width:20%" class="mt-4 img-fluid mb-2" alt="">
+                        </div> -->
                         <p class="mt-3 jus">
-                            To increase the reach and access of result oriented Insights, by reducing the research and
+                        To increase the reach and access of result oriented Insights, by reducing the research and
                             investigating time of machine learning seekers, by building unified frame works and platforms
                             to become leader and trusted solution provider in the technology of molding intelligence and
                             efficiency into the system.
                         </p>
+                        <!-- <a href="#!" data-toggle="modal" data-target="#vision">Read more</a> -->
                     </div>
                 </div>
             </div>
@@ -305,13 +295,12 @@ EOT;
     </section>
     <?php include('modal.php'); ?>
 
-    <section class="how-it-works left-shap pt-5 pb-4" id="wethink">
+    <section class="how-it-works left-float pt-5 pb-4" id="wethink">
         <div class="container pt-2">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="title-box">
                         <h2 class="title font-weight-bold"><b class="headings">What</b> We Think</h2>
-                        <!-- <p class="sub-title">Simply dummy has been the industry's standard dummy text.</p> -->
                     </div>
                 </div>
             </div>
@@ -358,7 +347,6 @@ EOT;
                         <h4 class="mb-3">Idea Validation</h4>
                         <p class="mb-0 jus">We encourage our clients to come up with their needs. We take...</p>
                         <a href="#!" data-toggle="modal" data-target="#think4">Read more</a>
-
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4">
@@ -377,7 +365,7 @@ EOT;
                 <div class="col-lg-4 col-md-4">
                     <div class="future-services text-center wow slideInUp" data-wow-duration="1.5s">
                         <div class="future-img">
-                            <img src="img/feature/mach.png" class="img-fluid mb-4" alt="">
+                            <img src="img/feature/ml.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Pipeline Acceleration</h4>
                         <p class="mb-0 jus">Most of the computationally intensive tasks are...</p>
@@ -389,7 +377,7 @@ EOT;
         </div>
     </section>
 
-    <div class="container-fluid ba-sli bg-dark conection-shap pt-4 mt-4">
+    <div class="container-fluid ba-sli bg-dark conection-float pt-4 mt-4">
         <div class="container-ba">
             <div class="">
                 <div class="col-sm-12">
@@ -398,11 +386,8 @@ EOT;
                         <p class="sub-title">Neuronoid's automated machine learning platform empowers users to quickly and easily build highly accurate predictive models with full transparency—and within minutes.</p>
                     </div>
                 </div>
-                <!-- <div class="col">
-                        <h3 class="">How neuroids Automates Predictive Modeling</h3>
-                    </div> -->
             </div>
-            <div class="row d-none d-lg-block d-xl-block">
+            <!-- <div class="row d-none d-lg-block d-xl-block">
                 <div class='baSlider '>
                     <div class='frame'>
 
@@ -426,43 +411,23 @@ EOT;
             </div>
             <div class="row d-xl-none d-lg-none">
                 <div class="col-12 ">
-                    <img src='img/old.png' style="width: 100%" baSlider-image>
+                    <img src='img/old1.png' style="width: 100%" baSlider-image>
                 </div>
                 <div class="col-12">
-                    <img src='img/new.png' style="width: 100%" baSlider-image>
+                    <img src='img/new1.png' style="width: 100%" baSlider-image>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="text-center col">
+                    <h2 class="text-center mt-5 mb-5">
+                         Coming Soon
+                    </h2>
                 </div>
             </div>
         </div>
     </div>
-    <!-- <section class="pt-0 wethink pt-5 mb-5 conection-shap" id="wethink">
-        <div class="container pt-2">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="title-box">
-                        <h2 class="title font-weight-bold"><b class="headings">What</b> we think</h2>
-                         <p class="sub-title">Simply dummy has been the industry's standard dummy text.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="fully-dedicated wow slideInLeft">
-                        <img src="images/wethink/04.png" class="img-fluid " alt="">
-                    </div>
-                </div>
-                <div class="col-md-6 text-left align-self-center">
-                    <div class="ml-3 mt-3">
-                        <h3 class="font-weight-bold">Fully dedicated to finding the best solutions.</h3>
-                        <p class="mt-3">.</p>
-                        <a class="button mt-3 btn btn-neuro" href="#">Get Started</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <section class="neu-blog pt-0 pt-5 conection-shap" id="wedo">
+
+    <section class="neu-blog pt-0 pt-5 conection-float" id="wedo">
         <div class="container pt-4">
             <div class="row">
                 <div class="col-sm-12">
@@ -481,7 +446,7 @@ EOT;
                             <img src="img/feature/ad.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Natural language processing (NLP)</h4>
-                        <p class="mb-0">We help our customers in bridging the gap between human communication ...</p>
+                        <p class="mb-0 jus">We help our customers in bridging the gap between human ...</p>
                         <a href="#!" data-toggle="modal" data-target="#wedo1">Read more</a>
                     </div>
                 </div>
@@ -491,7 +456,7 @@ EOT;
                             <img src="img/feature/data.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Data Analytics</h4>
-                        <p class="mb-0">Neuronoids turns technology into business outcomes by delivering Information ...</p>
+                        <p class="mb-0 jus">Neuronoids turns technology into business outcomes by delivering Information ...</p>
                         <a href="#!" data-toggle="modal" data-target="#wedo2">Read more</a>
 
                     </div>
@@ -502,7 +467,7 @@ EOT;
                             <img src="img/feature/dev.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Computer Vision</h4>
-                        <p class="mb-0">Computer Vision (CV) is a field devoted for analyzing, modifying, and ...</p>
+                        <p class="mb-0 jus">Computer Vision (CV) is a field devoted for analyzing, modifying, and ...</p>
                         <a href="#!" data-toggle="modal" data-target="#wedo3">Read more</a>
 
                     </div>
@@ -510,10 +475,10 @@ EOT;
                 <div class="col-lg-4 col-md-4">
                     <div class="future-services text-center wow slideInUp" data-wow-duration="0.5s">
                         <div class="future-img">
-                            <img src="img/feature/mach.png" class="img-fluid mb-4" alt="">
+                            <img src="img/feature/ml.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Machine Learning</h4>
-                        <p class="mb-0">Machine Learning is a part of Artificial Intelligence. It builds...</p>
+                        <p class="mb-0 jus">Machine Learning is a part of Artificial Intelligence. It builds...</p>
                         <a href="#!" data-toggle="modal" data-target="#wedo4">Read more</a>
 
                     </div>
@@ -521,10 +486,10 @@ EOT;
                 <div class="col-lg-4 col-md-4">
                     <div class="future-services text-center wow slideInUp" data-wow-duration="1s">
                         <div class="future-img">
-                            <img src="img/feature/pip.png" class="img-fluid mb-4" alt="">
+                            <img src="img/feature/ai.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Deep Learning</h4>
-                        <p class="mb-0">To maximize your data science potential, it is necessary to determine ...</p>
+                        <p class="mb-0 jus">To maximize your data science potential, it is necessary to determine ...</p>
                         <a href="#!" data-toggle="modal" data-target="#wedo5">Read more</a>
 
                     </div>
@@ -535,7 +500,7 @@ EOT;
                             <img src="img/feature/turn.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Turnkey Solutions</h4>
-                        <p class="mb-0">Turnkey is a product or service that is designed, supplied, built...</p>
+                        <p class="mb-0 jus">Turnkey is a product or service that is designed, supplied, built...</p>
                         <a href="#!" data-toggle="modal" data-target="#wedo6">Read more</a>
 
                     </div>
@@ -583,17 +548,57 @@ EOT;
                         </div>
                         <div class="item">
                             <div class="clients-box">
-                                <img class="img-fluid client-img" src="images/clients/java.png" alt="image" data-toggle="tooltip" title="JAVA">
+                                <img class="img-fluid client-img" src="images/clients/tensor.png" alt="image" data-toggle="tooltip" title="Tensor Flow">
                             </div>
                         </div>
                         <div class="item">
                             <div class="clients-box">
-                                <img class="img-fluid client-img" src="images/clients/react.png" alt="image" data-toggle="tooltip" title="React">
+                                <img class="img-fluid client-img" src="images/clients/cuda.png" alt="image" data-toggle="tooltip" title="Cuda">
                             </div>
                         </div>
                         <div class="item">
                             <div class="clients-box">
                                 <img class="img-fluid client-img" src="images/clients/lisp.png" alt="image" data-toggle="tooltip" title="Lisp">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img" src="images/clients/pyt.png" alt="image" data-toggle="tooltip" title="Pytorch">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img" src="images/clients/keras.png" alt="image" data-toggle="tooltip" title="Keras">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img" src="images/clients/cffe2.png" alt="image" data-toggle="tooltip" title="Coffe 2">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img" src="images/clients/aws.png" alt="image" data-toggle="tooltip" title="AWS ML">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img" src="images/clients/big.png" alt="image" data-toggle="tooltip" title="Big ML">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img" src="images/clients/google.png" alt="image" data-toggle="tooltip" title="Google Cloud">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img" src="images/clients/tab.png" alt="image" data-toggle="tooltip" title="Tableau">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="clients-box">
+                                <img class="img-fluid client-img" src="images/clients/lin.png" alt="image" data-toggle="tooltip" title="Linux">
                             </div>
                         </div>
                     </div>
@@ -616,26 +621,24 @@ EOT;
                     <div class="owl-carousel owl-carousel3" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true" data-items="6" data-items-laptop="5" data-items-tab="3" data-items-mobile="2" data-items-mobile-sm="1">
                         <div class="item">
                             <div class="clients-box">
-                                <!-- <img class="img-fluid client-img" src="images/clients/py.png" alt="image"
-                                    data-toggle="tooltip" title="Python"> -->
+                                
                                 <h4 class="h3-responsive pb-3 font-weight-bold">Software Developer</h4>
-                                <p>If you posses good programming skills and to be part of the leading team in code optimization & face the most advanced challenges in the area of computer vision and machine learning, we invite you to join Neuronoids.</p>
+                                <p class="jus">If you posses good programming skills and to be part of the leading team in code optimization & face the most advanced challenges in the area of computer vision and machine learning, we invite you to join Neuronoids.</p>
                                 <div class="text-center">
-                                    <a href="" class=" mb-4 aply-a" data-toggle="modal" data-target="#applyform">Apply Now</a>
+                                    <a href="" class=" mb-4 aply-a cus-grad" data-toggle="modal" data-target="#applyform">Apply Now</a>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="clients-box">
-                                <!-- <img class="img-fluid client-img" src="images/clients/r.png" alt="image"
-                                    data-toggle="tooltip" title="R language"> -->
+                     
                                 <h4 class="h3-responsive pb-3 font-weight-bold">Devops </h4>
-                                <p>If you posses good programming skills and to be part of the leading team in code optimization & face the most advanced challenges in the area of computer vision and machine learning, we invite you to join Neuronoids.</p>
+                                <p class="jus">If you posses good programming skills and to be part of the leading team in code optimization & face the most advanced challenges in the area of computer vision and machine learning, we invite you to join Neuronoids.</p>
                                 <!-- <a href="#contact">Apply Now</a> -->
 
 
                                 <div class="text-center">
-                                    <a href="" class=" mb-4 aply-a" data-toggle="modal" data-target="#applyform">Apply Now</a>
+                                    <a href="" class=" mb-4 aply-a cus-grad" data-toggle="modal" data-target="#applyform">Apply Now</a>
                                 </div>
                             </div>
                         </div>
@@ -648,7 +651,7 @@ EOT;
         </div>
     </section>
     <!-- partners -->
-    <section class="iq-clients left-shap pt-0 mt-5">
+    <section class="iq-clients left-float pt-0 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -744,25 +747,7 @@ EOT;
 
                             <div class="status"></div>
                         </div>
-                        <!--Grid column-->
 
-                        <!--Grid column-->
-                        <!-- <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>Ayyappa Society, Madhapur, Hyderabad</p>
-                </li>
-
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>+ 01 234 567 89</p>
-                </li>
-
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>contact@neuronoids.com</p>
-                </li>
-            </ul>
-        </div> -->
-                        <!--Grid column-->
                     </div>
 
                 </div>
@@ -779,62 +764,7 @@ EOT;
 
     </section>
     <!--Section: Contact v.2-->
-    <!-- contact end -->
-    <!-- partners -->
-    <!-- <footer id="contact" class="main-bg pt-5 ">
-        <div class="container">
-            <div class="row">
-                <div class="col-auto mr-auto">
-                    <div class="footer-logo">
-                        <a href="index.php"><img src="img/logo/neuronoidsLogo.png" alt="img"></a>
-                    </div>
-                </div>
-                <div class="col-auto right-footer">
-                    <ul class="nav footer-menu">
-                        <li class="nav-item">
-                            <a class="nav-link " href="index.php">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="pt-3 ">
-            <div class="pt-3">
-                <div class="row justify-content-between">
-                    <div class="col-auto mr-auto">
-                        <h6 class="text-white iq-font-18"><span>Design<a href="#">@</a></span><a href="">random.com</a>
-                        </h6>
-                    </div>
-                    <div class="col-auto">
-                        <div class="social-icone">
-                            <ul>
-                                <li class="d-inline"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li class="d-inline"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li class="d-inline"><a href="#"><i class="fab fa-google"></i></a></li>
-                                <li class="d-inline"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-        <footer class="page-footer footer-gra font-small ">
 
-            <div class="footer-copyright text-center py-3">© 2018 Copyright:
-                <a href="#">neuronoids</a>
-            </div>
-
-        </footer> -->
-    <!-- footer -->
     <!-- Footer -->
     <footer class="page-footer font-small bg-dark pt-4">
 
@@ -850,7 +780,7 @@ EOT;
                         <a href="index.php"><img src="img/logo/logo.png" alt="img"></a>
                     </div>
                     <!-- <h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6> -->
-                    <p>We at Neuronoids have deep roots into developing custom algorithms on the need basis and building complete processing pipeline end to end.</p>
+                    <p class="jus">We at Neuronoids have deep roots into developing custom algorithms on the need basis and building complete processing pipeline end to end.</p>
                 </div>
                 <!-- Grid column -->
 
@@ -863,14 +793,26 @@ EOT;
                         <a href="#!">Machine Learning</a>
                     </p>
                     <p>
-                        <a href="#!">Artificial Intelligence</a>
+                        <a href="#!">Computer Vision</a>
                     </p>
                     <p>
-                        <a href="#!">BrandFlow</a>
+                        <a href="#!">Natural Language Processing</a>
                     </p>
                     <p>
-                        <a href="#!">Algorithm Design</a>
+                        <a href="#!">Speech Recognition</a>
                     </p>
+                    <p>
+                        <a href="#!">Optimization</a>
+                    </p>
+                    <p>
+                        <a href="#!">Robotics</a>
+                    </p>
+                    <!-- <p>
+                        <a href="#!">Rule Based Systems</a>
+                    </p>
+                    <p>
+                        <a href="#!">Expert Systems</a>
+                    </p> -->
                 </div>
                 <!-- Grid column -->
 
@@ -905,8 +847,7 @@ EOT;
                         <i class="fas fa-envelope mr-3"></i> info@neuronoids.com</p>
                     <p>
                         <i class="fas fa-phone mr-3"></i> 040-48531655/755</p>
-                    <!-- <p>
-                <i class="fas fa-print mr-3"></i> 9858032123</p> -->
+                  
                 </div>
                 <!-- Grid column -->
 
@@ -994,15 +935,14 @@ EOT;
                     include('contact.php');
                     ?>
                 </div>
-                <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div> -->
+
             </div>
         </div>
     </div>
     <script>
         $('.baSlider').baSlider();
     </script>
+    <!-- owl carousel script -->
     <script>
         $(document).ready(function() {
             var owl = $('.owl-carousel1');
@@ -1099,8 +1039,6 @@ EOT;
             })
         })
     </script>
-
-    <!-- Start your project here-->
     <script>
         $(document).ready(function() {
             // Add scrollspy to <body>
@@ -1132,17 +1070,22 @@ EOT;
             });
         });
     </script>
-    <!-- SCRIPTS -->
-    <!-- custom js -->
-    <!-- JQuery -->
+    <script>
 
-    <!-- <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script> -->
+$('#demo').on('hidden.bs.modal', function (e) {
+  // do something...
+  $('#demo iframe').attr("src", $("#demo iframe").attr("src"));
+});
+</script>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
 
+    <!-- custom js -->
 
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>

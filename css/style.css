@@ -6,18 +6,32 @@
     src: local('Chrobot Regular'), url('Chrobot.woff') format('woff');
     }
   body {
-      text-align: justify'
+      text-align: justify;
+      font-family: 'Open Sans', sans-serif;
+      /* color: #425563;
+      font-size: 18px;
+      line-height: 20px; */
+/* font-family: 'Bitter', serif; */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Lato', sans-serif; */
     /* font-family: sans-serif; */
-
     /* font-family: Chrobot Regular ; */
-     /* font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 2em;
-    color: rgb(0, 0, 0)  */
-    /* color: #fff !important;
-    background: rgb(23, 31, 22) */
+
 }
+.load-rotate {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin:-60px 0 0 -60px; */
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 .jus{
     text-align: justify !important;
 }
@@ -204,7 +218,6 @@ header .navbar-light .navbar-nav li.active .nav-link, header .navbar-light .navb
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cd6f', endColorstr='#46c894', GradientType=1);
     color: #fff
 }
-/* rgb(116, 186, 56) 15%, rgba(0, 0, 0, 0.8) 100%); */
 .dropdown-item:active, .dropdown-item:hover {
     background: #fff;
     color: #76cd6f
@@ -212,14 +225,7 @@ header .navbar-light .navbar-nav li.active .nav-link, header .navbar-light .navb
 /* rgba(175, 219, 37, 1) old green */
 header.menu-sticky {
     background: #212121!important;
-    /* background: #75cd6f;
-    background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(175, 219, 37, 1)));
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
-    background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
-    background: -ms-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
-    background: linear-gradient(to right, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75cd6f', endColorstr='#46c894', GradientType=1); */
+
     -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
     -moz-box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
@@ -355,13 +361,13 @@ header .navbar-toggler:not(:disabled):not(.disabled) {
 .banner-type:before {
     content: '';
     position: absolute;
-    background: url(../img/banner/banner-shap.png);
+    background: url(../img/banner/banner-float.png);
     width: 70%;
     height: 70%;
     background-repeat: no-repeat;
     right: -63%;
     top: -30%;
-    -webkit-animation: bounce 2s infinite alternate
+    -webkit-animation: bounce 2s infinite alternate;
 }
 
 .list-style li {
@@ -455,11 +461,11 @@ header .navbar-toggler:not(:disabled):not(.disabled) {
 }
 /* services end */
 /* floating images */
-.left-shap {
+.left-float {
     position: relative;
     overflow: hidden
 }
-.left-shap:before {
+.left-float:before {
     content: '';
     position: absolute;
     background: url(../img/banner/shapg.png);
@@ -471,15 +477,15 @@ header .navbar-toggler:not(:disabled):not(.disabled) {
     -webkit-animation: bounce 2s infinite alternate
 }
 
-.conection-shap {
+.conection-float {
     position: relative;
     overflow: hidden
 }
 
-.conection-shap:before {
+.conection-float:before {
     content: '';
     position: absolute;
-    background: url(../img/banner/conection-shap.png);
+    background: url(../img/banner/conection-float.png);
     width: 21%;
     height: 60%;
     background-repeat: no-repeat;
@@ -487,15 +493,15 @@ header .navbar-toggler:not(:disabled):not(.disabled) {
     top: 41%;
     -webkit-animation: bounce 2s infinite alternate
 }
-.ba-shap {
+.ba-float {
     position: relative;
     overflow: hidden
 }
 
-.ba-shap:before {
+.ba-float:before {
     content: '';
     position: absolute;
-    background: url(../img/banner/finding-shap.png);
+    background: url(../img/banner/finding-float.png);
     width: 38%;
     height: 83%;
     background-repeat: no-repeat;
@@ -612,7 +618,7 @@ header .navbar-toggler:not(:disabled):not(.disabled) {
 }
 .aply-a, 
 .aply-a:hover{
-    background: #71b93a;
+    /* background: #71b93a; */
     border-radius: 22px;
     color: #ffffff;
     padding: 10px;
@@ -693,14 +699,7 @@ footer .social-icone ul li:nth-last-child(1) {
     background: -ms-linear-gradient(left, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
     background: linear-gradient(to right, rgba(0, 0, 0, 1) 40%, rgba(175, 219, 37, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75cd6f', endColorstr='#46c894', GradientType=1);
-    /* background: #75cd6f;
-    background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(175, 219, 37, 1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(175, 219, 37, 1)));
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(175, 219, 37, 1) 100%);
-    background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(175, 219, 37, 1) 100%);
-    background: -ms-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(175, 219, 37, 1) 100%);
-    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(175, 219, 37, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75cd6f', endColorstr='#46c894', GradientType=1); */
+
 }
 /* footer end */
 
@@ -729,7 +728,7 @@ a, button {
     color: #46c894
 }
 .title-box {
-    margin-bottom: 75px;
+    margin-bottom: 40px;
     text-align: center
 }
 
@@ -818,10 +817,3 @@ a, button {
 .cus-model .text-md-left{
     text-align: right !important;
 }
-/* .modal-dialog {
-    max-width: 500px;
-    margin: 0rem auto;
-  
-    float: right;
-    height: 100% !important;
-} */

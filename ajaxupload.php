@@ -25,7 +25,7 @@ if(!empty($_POST['name']) || !empty($_POST['email']) || $_FILES['image'])
     $number = $_POST['number'];
     
     //include database configuration file
-    include_once 'config.php';
+    include_once 'db/config.php';
     
     //insert form data in the database
     $insert = $conn->query("INSERT job_apply (name,email,number,file_name) VALUES ('".$name."','".$email."','".$number."','".$path."')");

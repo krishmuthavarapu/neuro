@@ -1,5 +1,5 @@
 @media only screen and (min-width:1890px) and (max-width:2529px) {
-    .conection-shap:before {
+    .conection-float:before {
         width: 17%
     }
     .iq-clients:before {
@@ -29,17 +29,17 @@
     .banner:before {
         top: 36%
     }
-    .finding-shap:before {
+    .finding-float:before {
         width: 42%;
         left: -125px
     }
     .Get-tips-tricks .tips-img img {
         max-width: 100%
     }
-    .tricks-shap:before {
+    .tricks-float:before {
         height: 62%
     }
-    .Service-shap:before {
+    .Service-float:before {
         left: -154px;
         width: 27%
     }
@@ -60,7 +60,7 @@
         top: 33%;
         width: 25%
     }
-    .finding-shap:before {
+    .finding-float:before {
         width: 45%;
         left: -208px
     }
@@ -80,14 +80,14 @@
         left: -15px;
         height: 71%
     }
-    .finding-shap:before {
+    .finding-float:before {
         width: 58%;
         left: -281px
     }
-    .tricks-shap:before {
+    .tricks-float:before {
         top: 34%
     }
-    .Service-shap:before {
+    .Service-float:before {
         left: -223px;
         width: 40%
     }
@@ -288,14 +288,14 @@
     .banner {
         padding: 150px 0 24px
     }
-    .finding-shap:before {
+    .finding-float:before {
         width: 76%
     }
-    .Service-shap:before {
+    .Service-float:before {
         width: 52%;
         height: 55%
     }
-    .tricks-shap:before {
+    .tricks-float:before {
         top: 26%;
         height: 74%
     }
@@ -356,7 +356,7 @@
     header .main-header {
         padding: 10px 50px
     }
-    .finding-shap:before {
+    .finding-float:before {
         width: 121%
     }
     footer .footer-logo {
@@ -368,7 +368,7 @@
     .get-tips-tricks h3 {
         margin-top: 20px
     }
-    .Service-shap:before {
+    .Service-float:before {
         width: 82%
     }
     .neu-detail-box img {
@@ -436,7 +436,7 @@
         padding: .5rem .8rem;
         font-size: 14px
     }
-    .Service-shap:before {
+    .Service-float:before {
         width: 110%
     }
     footer .justify-content-between h6 {

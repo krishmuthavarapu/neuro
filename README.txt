@@ -24,4 +24,4 @@ https://mdbootstrap.com/forums/forum/support/
 Contact:
 office@mdbootstrap.com
 
-igone this line
+ignore this line
