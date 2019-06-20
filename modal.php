@@ -340,30 +340,33 @@
                     <h4 class="h4-responsive font-weight-bold">Responsibilities:</h4>
                     <ul>
                         <li>
-                        Developing new user-facing features using Angular <br>
+                        A passion for automating everything <br>
                         </li>
                         <li>
-                        Work closely with development leads to own and help test, release and maintain the solutions you develop.
+                        A passion for collaborating and tearing down communication silos
                         </li>
                         <li>
-                        Drive the full application development lifecycle - requirements analysis, design, coding, debugging and bug fixing.
+                        Experience maintaining large scale infrastructure, 100+ servers minimum
                         </li>
-                        <li>Work with product and development teams to provide innovative customer solutions
-</li>
+                        <li>
+                            5+ Years experience scripting in Bash, Ruby, Python, or similar
+                        </li>
+                        <li>5+ Years experience with Linux (Ubuntu, RedHat, or similar)</li>
+                        <li>3+ Years experience with Docker and/or container orchestration (Docker, Kubernetes, Mesos, or similar)</li>
+
                     </ul>
-                    <h4 class="h4-responsive font-weight-bold">Skills and Experience:</h4>
+                    <h4 class="h4-responsive font-weight-bold">Recommended:</h4>
                     <ul>
-                        <li>3+ years of experience working with Angular</li>
-                        <li>Deep knowledge of Angular practices and commonly used modules</li>
-                        <li>Experience with a broad range of technologies such as Object Oriented Design and Development, Multi-tier system architecture, Web Services and XML, Web service development)</li>
-                        <li>Able to integrate existing API (REST)</li>
-                        <li>Experience in working with JavaScript, CSS and HTML5</li>
-                        <li>Systems integration experience in large complex organizations</li>
+                        <li>3+ Years experience in Python</li>
+                        <li>3+ Years experience with AWS</li>
+                        <li>3+ Years experience with CI tools (Jenkins or similar)</li>
+                        <li>Familiar with DevOps methodologies</li>
+                        <li>Familiarity with both Cloud Deployment and On-Premise Release Workflows</li>
                     </ul>
                     <h4 class="h4-responsive font-weight-bold">Education:</h4>
                     <ul>
                         <li>Bachelors or Masters from premier Institutes preferred.</li>
-                        <li>Experience 3-10 years</li>
+                        <li>Experience 5-10 years</li>
                     </ul>
 
                     </div>
@@ -414,7 +417,7 @@
 
                 </div>
                 <div class="modal-footer d-flex justify-content-center">
-                    <button class="btn btn-deep-orange br-90 cus-grad" type="submit" value="upload">Submit</button>
+                    <button class="btn btn-deep-orange br-90 cus-grad" name="file" type="submit" value="upload">Submit</button>
                 </div>
 </form>
             </div>
@@ -430,7 +433,7 @@
             </div>
             <div class="modal-body text-center">
             <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3PDXmYoF5U"
+              <iframe class="embed-responsive-item" src="videos/LogoDetection.mp4"
                 allowfullscreen></iframe>
             </div>
             </div>
