@@ -1,5 +1,7 @@
 <?php
 include('security.php');
+include('db/config.php');
+
 
 include('includes/header.php'); ?>
 
@@ -18,7 +20,6 @@ include('includes/header.php'); ?>
     }
     ?>
         <?php
-        $connection = mysqli_connect("localhost", "root", "", "neuronoids");
         $query = "SELECT * FROM users";
         $query_run = mysqli_query($connection, $query);
         ?>

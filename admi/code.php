@@ -1,7 +1,6 @@
 <?php 
 include('security.php');
-
-$connection = mysqli_connect("localhost","root","" ,"neuronoids");
+include('db/config.php');
 if(isset($_POST['registerbtn']))
 {
     $username = $_POST['username'];

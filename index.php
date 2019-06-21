@@ -20,8 +20,8 @@ if (array_key_exists('email', $_POST)) {
     $mail->Port = 587;  
 
     $mail->SMTPAuth = true;
-    $mail->Username = 'mskc999@gmail.com';
-    $mail->Password = '9908547266msk';
+    $mail->Username = 'info@neuronoids.com';
+    $mail->Password = 'Pwd@nn123';
     $mail->SMTPSecure = 'tls';
     $mail->smtpConnect(
         array(
@@ -37,9 +37,9 @@ if (array_key_exists('email', $_POST)) {
     //Use a fixed address in your own domain as the from address
     //**DO NOT** use the submitter's address here as it will be forgery
     //and will cause your messages to fail SPF checks
-    $mail->setFrom('mskc999@gmail.com', 'First Last');
+    $mail->setFrom('info@neuronoids.com', 'Neuronoids');
     //Send the message to yourself, or whoever should receive contact for submissions
-    $mail->addAddress('mskc999@gmail.com', 'John Doe');
+    $mail->addAddress('info@neuronoids.com', 'Neuronoids');
     //Put the submitter's address in a reply-to header
     //This will fail if the address provided is invalid,
     //in which case we should ignore the whole request
@@ -625,20 +625,20 @@ EOT;
                                 <h4 class="h3-responsive pb-3 font-weight-bold">Software Developer</h4>
                                 <p class="jus">If you posses good programming skills and to be part of the leading team in code optimization & face the most advanced challenges in the area of computer vision and machine learning, we invite you to join Neuronoids.</p>
                                 <div class="text-center">
-                                    <a href="" class=" mb-4 aply-a cus-grad" data-toggle="modal" data-target="#applyform">Apply Now</a>
+                                    <a href="" class=" mb-4 aply-a cus-grad" data-toggle="modal" data-target="#applyform">View More</a>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="clients-box">
                      
-                                <h4 class="h3-responsive pb-3 font-weight-bold">Devops </h4>
+                                <h4 class="h3-responsive pb-3 font-weight-bold">Devops</h4>
                                 <p class="jus">If you posses good programming skills and to be part of the leading team in code optimization & face the most advanced challenges in the area of computer vision and machine learning, we invite you to join Neuronoids.</p>
                                 <!-- <a href="#contact">Apply Now</a> -->
 
 
                                 <div class="text-center">
-                                    <a href="" class=" mb-4 aply-a cus-grad" data-toggle="modal" data-target="#applyform">Apply Now</a>
+                                    <a href="" class=" mb-4 aply-a cus-grad" data-toggle="modal" data-target="#applyform">View More</a>
                                 </div>
                             </div>
                         </div>

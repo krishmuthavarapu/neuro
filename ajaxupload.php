@@ -56,8 +56,8 @@ require 'vendor/autoload.php';
    $mail->Port = 587;  
 
    $mail->SMTPAuth = true;
-   $mail->Username = 'mskc999@gmail.com';
-   $mail->Password = '9908547266msk';
+   $mail->Username = 'info@neuronoids.com';
+   $mail->Password = 'Pwd@nn123';
    $mail->SMTPSecure = 'tls';
    $mail->smtpConnect(
 	   array(
@@ -69,9 +69,9 @@ require 'vendor/autoload.php';
 	   )
    );
 
-   $mail->setFrom('mskc999@gmail.com', 'First Last');
+   $mail->setFrom('info@neuronoids.com', 'Neuronoids');
 //Send the message to yourself, or whoever should receive contact for submissions
-	$mail->addAddress('mskc999@gmail.com', 'John Doe');
+	$mail->addAddress('info@neuronoids.com', 'Neuronoids');
 
    $mail->Subject = utf8_decode("Job Application");
 
