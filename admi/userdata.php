@@ -89,6 +89,8 @@ include('includes/header.php'); ?>
                         <th>Number</th>
                         <th>Resume</th>
                         <th>Date</th>
+                        <th>Delete</th>
+
                     </tr>
                 </thead>
                 <tbody>
@@ -102,6 +104,13 @@ include('includes/header.php'); ?>
                                 <td><?php echo $row['email']; ?></td>
                                 <td><?php echo $row['number']; ?></td>
                                 <td><?php echo $row['file_name']; ?></td>
+                                <td><?php echo $row['date']; ?></td>
+                                <td>
+                                    <form action="code.php" method="POST">
+                                    <input type="hidden" name="delete_id" value="<?php echo $row['id'];?>">
+                                    <button class="btn-danger " name="delete_jd" type="submit">Delete</button>
+                                    </form>
+                                </td>
 
 
                                 <!-- <td><button class="btn-success " type="submit">Edit</button></td>

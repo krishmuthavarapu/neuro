@@ -150,7 +150,7 @@
                 <div class="future-img">
                     <img src="img/feature/ad.png" class="img-fluid mb-4" alt="">
                 </div>
-                <p class="mb-0 jus">We help our customers in bridging the gap between human communication and digital data, and engage their customers in more meaningful ways.  We offer language processing services, by blending linguistic knowledge and AI skills. Fully extensible knowledge graph and custom integration needs </p>
+                <p class="mb-0 jus">We help our customers in bridging the gap between human communication and digital data, and engage their customers in more meaningful ways. We offer language processing services, by blending linguistic knowledge and AI skills. Fully extensible knowledge graph and custom integration needs </p>
 
             </div>
             <div class="modal-footer">
@@ -172,7 +172,7 @@
                 <div class="future-img">
                     <img src="img/feature/data.png" class="img-fluid mb-4" alt="">
                 </div>
-                <p class="mb-0 jus">Neuronoids turns technology into business outcomes by delivering Information management, business intelligence and analytic solutions under one umbrella.  We collaborate with our clients in building their proprietary solution for their hidden data.</p>
+                <p class="mb-0 jus">Neuronoids turns technology into business outcomes by delivering Information management, business intelligence and analytic solutions under one umbrella. We collaborate with our clients in building their proprietary solution for their hidden data.</p>
 
 
             </div>
@@ -195,7 +195,7 @@
                 <div class="future-img">
                     <img src="img/feature/dev.png" class="img-fluid mb-4" alt="">
                 </div>
-                <p class="mb-0 jus">Computer Vision (CV) is a field devoted for analyzing, modifying, and detailed level understanding of images.  We enable the companies with the vision technology reducing their time to market with our expertise in realizing the algorithms.</p>
+                <p class="mb-0 jus">Computer Vision (CV) is a field devoted for analyzing, modifying, and detailed level understanding of images. We enable the companies with the vision technology reducing their time to market with our expertise in realizing the algorithms.</p>
 
             </div>
             <div class="modal-footer">
@@ -287,9 +287,9 @@
                     <img src="img/feature/turn.png" class="img-fluid mb-4" alt="">
                 </div>
                 <p class="mb-0 jus">To increase the reach and access of result oriented Insights, by reducing the research and
-                            investigating time of machine learning seekers, by building unified frame works and platforms
-                            to become leader and trusted solution provider in the technology of molding intelligence and
-                            efficiency into the system.
+                    investigating time of machine learning seekers, by building unified frame works and platforms
+                    to become leader and trusted solution provider in the technology of molding intelligence and
+                    efficiency into the system.
                 </p>
 
             </div>
@@ -313,9 +313,9 @@
                     <img src="img/feature/turn.png" class="img-fluid mb-4" alt="">
                 </div>
                 <p class="mb-0 jus">Providing latest technology access in Machine Learning, computer vision and data analytics
-                            space to our customers with timely execution and reasonable cost by engaging them closely
-                            and making our clients excel in their business and exceeding their expectation by building more
-                            customized solution for them
+                    space to our customers with timely execution and reasonable cost by engaging them closely
+                    and making our clients excel in their business and exceeding their expectation by building more
+                    customized solution for them
                 </p>
 
             </div>
@@ -327,26 +327,26 @@
 </div>
 <!-- apply form -->
 <div class="modal fade" id="applyform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header text-center">
-                    <h4 class="modal-title w-100 font-weight-bold">Apply Now</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body mx-3">
-                    <div>
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Apply Now</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <div>
                     <h4 class="h4-responsive font-weight-bold">Responsibilities:</h4>
                     <ul>
                         <li>
-                        A passion for automating everything <br>
+                            A passion for automating everything <br>
                         </li>
                         <li>
-                        A passion for collaborating and tearing down communication silos
+                            A passion for collaborating and tearing down communication silos
                         </li>
                         <li>
-                        Experience maintaining large scale infrastructure, 100+ servers minimum
+                            Experience maintaining large scale infrastructure, 100+ servers minimum
                         </li>
                         <li>
                             5+ Years experience scripting in Bash, Ruby, Python, or similar
@@ -369,19 +369,19 @@
                         <li>Experience 5-10 years</li>
                     </ul>
 
-                    </div>
                 </div>
-                <div class="modal-footer d-flex justify-content-center">
-                    <button class="btn btn-deep-orange br-90 cus-grad"  data-toggle="modal" data-target="#apply">Apply</button>
-                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-deep-orange br-90 cus-grad" data-toggle="modal" data-target="#apply">Apply</button>
             </div>
         </div>
     </div>
+</div>
 
 <div class="modal fade" id="apply" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <form method="POST" id="form-res" enctype="multipart/form-data" action="ajaxupload.php">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form method="POST" id="form-res" enctype="multipart/form-data" action="ajaxupload.php">
                 <div class="modal-header text-center">
                     <h4 class="modal-title w-100 font-weight-bold">Apply Now</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -410,7 +410,7 @@
                             <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
                         </div>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" name="image"  id="uploadFile" aria-describedby="inputGroupFileAddon01">
+                            <input type="file" class="custom-file-input" name="image" id="uploadFile" aria-describedby="inputGroupFileAddon01">
                             <label class="custom-file-label" for="uploadFile">Choose file</label>
                         </div>
                     </div>
@@ -419,11 +419,11 @@
                 <div class="modal-footer d-flex justify-content-center">
                     <button class="btn btn-deep-orange br-90 cus-grad" name="file" type="submit" value="upload">Submit</button>
                 </div>
-</form>
-            </div>
+            </form>
         </div>
     </div>
-    <div class="modal fade" id="demo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+</div>
+<!-- <div class="modal fade" id="demo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header ">
@@ -432,16 +432,15 @@
                 </button>
             </div>
             <div class="modal-body text-center">
-            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-              <iframe class="embed-responsive-item" src="videos/LogoDetection.mp4"
-                allowfullscreen></iframe>
-            </div>
+                <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="videos/LogoDetection.mp4" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
-    <!-- <div class="modal fade" id="applyform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="applyform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header text-center">

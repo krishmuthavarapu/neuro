@@ -20,6 +20,7 @@ if(!empty($_POST['name']) || !empty($_POST['email']) || $_FILES['image'])
 		if(move_uploaded_file($tmp,$path)) 
 		{
 			echo "<img src='$path' />";
+			$mysqltime = date_create()->format('Y-m-d H:i:s');
 	$name = $_POST['name'];
     $email = $_POST['email'];
     $number = $_POST['number'];
@@ -28,7 +29,7 @@ if(!empty($_POST['name']) || !empty($_POST['email']) || $_FILES['image'])
     include_once 'db/config.php';
     
     //insert form data in the database
-    $insert = $conn->query("INSERT job_apply (name,email,number,file_name) VALUES ('".$name."','".$email."','".$number."','".$path."')");
+    $insert = $conn->query("INSERT job_apply (name,email,number,file_name,date) VALUES ('".$name."','".$email."','".$number."','".$path."','".$mysqltime."')");
     
     //echo $insert?'ok':'err';
 		}

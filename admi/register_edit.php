@@ -1,5 +1,6 @@
 <?php
 include('security.php');
+include('db/config.php');
 
 include('includes/header.php'); ?>
 
@@ -13,7 +14,6 @@ include('includes/header.php'); ?>
     <div class="row pt-4 pl-2">
         <div class="col">
             <?php
-            $connection = mysqli_connect("localhost", "root", "", "neuronoids");
             if (isset($_POST['edit_btn'])) {
                 $id = $_POST['edit_id'];
 

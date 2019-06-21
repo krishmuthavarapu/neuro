@@ -78,7 +78,7 @@ if(isset($_POST['login_btn']))
         header('Location: login.php');
     }
 }
-
+// delete user data
 if(isset($_POST['delete_ud']))
 {
     $id = $_POST['delete_Id'];
@@ -92,6 +92,19 @@ if(isset($_POST['delete_ud']))
      header('Location: userdata.php');    
      }
     }
-
+// delete job details
+if(isset($_POST['delete_jd']))
+{
+    $id = $_POST['delete_id'];
+    $query = "DELETE FROM job_apply WHERE Id = '$id'";
+    $query_run = mysqli_query($connection,$query);
+    if($query_run){
+        $_SESSION['success']="Your data is deleted";
+        header('Location: userdata.php');
+    }else{
+     $_SESSION['status']="Your data NOT deleted";
+     header('Location: userdata.php');    
+     }
+    }
 ?>
 

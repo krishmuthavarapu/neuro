@@ -78,7 +78,7 @@ EOT;
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Neuronoid</title>
+    <title>Neuronoids</title>
     <link rel="shortcut icon" href="img/logo/neuronoidsimage.png" type="image/x-icon">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Bitter|Lato|Montserrat|Open+Sans&display=swap" rel="stylesheet">
@@ -170,7 +170,7 @@ EOT;
             <div class="row">
                 <div class="col-sm-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.php">
+                        <a class="navbar-brand" href="http://www.neuronoids.com/">
                             <img src="img/logo/logo.png" class="img-fluid logo" alt="img">
                             <img src="img/logo/logo.png" class="img-fluid logo-white" alt="img">
                         </a>
@@ -191,9 +191,9 @@ EOT;
                                 <li class="nav-item">
                                     <a class="nav-link" href="#career">Careers</a>
                                 </li>
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="nav-link" data-toggle="modal" data-target="#demo" href="#!">Demo</a>
-                                </li>
+                                </li> -->
 
                             </ul>
                         </div>
@@ -727,7 +727,7 @@ EOT;
  
                 $result = mysqli_query($conn, $sql);
 
-                header('Location: index.php');
+                header('Location: http://www.neuronoids.com/');
             }
 
             ?>
@@ -777,7 +777,7 @@ EOT;
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <div class="footer-logo mb-3">
-                        <a href="index.php"><img src="img/logo/logo.png" alt="img"></a>
+                        <a href="http://www.neuronoids.com/"><img src="img/logo/logo.png" alt="img"></a>
                     </div>
                     <!-- <h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6> -->
                     <p class="jus">We at Neuronoids have deep roots into developing custom algorithms on the need basis and building complete processing pipeline end to end.</p>
@@ -822,7 +822,7 @@ EOT;
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
                     <p>
-                        <a href="index.php">Home</a>
+                        <a href="http://www.neuronoids.com/">Home</a>
                     </p>
                     <p>
                         <a href="#wethink">What we think</a>
@@ -879,22 +879,22 @@ EOT;
                     <div class="text-center text-md-right">
                         <ul class="list-unstyled list-inline">
                             <li class="list-inline-item">
-                                <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.facebook.com/Neuronoids-295499264297992/">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1" target="_blank" href="https://www.facebook.com/Neuronoids-295499264297992/">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://twitter.com/neuronoids">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1" target="_blank" href="https://twitter.com/neuronoids">
                                     <i class="fab fa-twitter"></i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://plus.google.com/u/0/b/110116149444378768597">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1" target="_blank" href="https://plus.google.com/u/0/b/110116149444378768597">
                                     <i class="fab fa-google-plus-g"></i>
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://in.pinterest.com/computers0080/pins/">
+                                <a class="btn-floating btn-sm rgba-white-slight mx-1" target="_blank" href="https://in.pinterest.com/computers0080/pins/">
                                     <i class="fab fa-pinterest-p"></i>
                                 </a>
                             </li>
@@ -913,9 +913,10 @@ EOT;
     </footer>
     <!-- Footer -->
     <!-- Footer -->
-    <div id="back-to-top">
+    <!-- <div id="back-to-top">
         <a class="top" id="top" href="#top"><span>Scroll Up</span> <i class="fas fa-arrow-up"></i></a>
-    </div>
+    </div> -->
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up "></i></a>
     <!-- fixed form -->
 
     <div id="feedback">
@@ -939,6 +940,23 @@ EOT;
             </div>
         </div>
     </div>
+    <!-- return to top -->
+<script>
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 1500);
+});
+</script>
+    <!-- return end -->
     <script>
         $('.baSlider').baSlider();
     </script>

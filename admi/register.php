@@ -1,6 +1,6 @@
 <?php
 include('security.php');
-
+include('db/config.php');
 include('includes/header.php'); ?>
 
 <?php include('includes/navbar.php'); ?>
@@ -64,7 +64,7 @@ include('includes/header.php'); ?>
     ?>
     <div class="row">
         <?php
-        $connection = mysqli_connect("localhost", "root", "", "neuronoids");
+        
         $query = "SELECT * FROM register";
         $query_run = mysqli_query($connection, $query);
         ?>
