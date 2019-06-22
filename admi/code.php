@@ -4,10 +4,16 @@ include('db/config.php');
 if(isset($_POST['registerbtn']))
 {
     $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $cpassword = $_POST['confirmpassword'];
+    // $email = $_POST['email'];
+    $email = mysqli_real_escape_string($connection, $_POST["email"]);
+    // $password = $_POST['password'];
+    // $password = md5($password);  
+    $password = mysqli_real_escape_string($connection, $_POST["password"]);
+    // $cpassword = $_POST['confirmpassword'];
+    $cpassword = mysqli_real_escape_string($connection, $_POST["confirmpassword"]);
+    // $cpassword = md5($cpassword); 
     if($password===$cpassword){
+        $password = md5($password);
         $query = "INSERT into register (username,email,password) VALUES ('$username', '$email', '$password')";
         $query_run = mysqli_query($connection, $query);
         if($query_run){
@@ -25,7 +31,53 @@ if(isset($_POST['registerbtn']))
         header('Location: register.php');
     }
 }
+// logi reg test 
+// if(isset($_POST["register"]))  
+// {  
+//      if(empty($_POST["username"]) && empty($_POST["password"]))  
+//      {  
+//           echo '<script>alert("Both Fields are required")</script>';  
+//      }  
+//      else  
+//      {  
+//           $username = mysqli_real_escape_string($connect, $_POST["username"]);  
+//           $password = mysqli_real_escape_string($connect, $_POST["password"]);  
+//           $password = md5($password);  
+//           $query = "INSERT INTO users (username, password) VALUES('$username', '$password')";  
+//           if(mysqli_query($connect, $query))  
+//           {  
+//                echo '<script>alert("Registration Done")</script>';  
+//           }  
+//      }  
+// }  
+// if(isset($_POST["login"]))  
+// {  
+//      if(empty($_POST["username"]) && empty($_POST["password"]))  
+//      {  
+//           echo '<script>alert("Both Fields are required")</script>';  
+//      }  
+//      else  
+//      {  
+//           $username = mysqli_real_escape_string($connect, $_POST["username"]);  
+//           $password = mysqli_real_escape_string($connect, $_POST["password"]);  
+//           $password = md5($password);  
+//           $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";  
+//           $result = mysqli_query($connect, $query);  
+//           if(mysqli_num_rows($result) > 0)  
+//           {  
+//                $_SESSION['username'] = $username;  
+//                header("location:entry.php");  
+//           }  
+//           else  
+//           {  
+//                echo '<script>alert("Wrong User Details")</script>';  
+//           }  
+//      }  
+// }  
 
+
+
+// end
 
 // update code
 if(isset($_POST['updatebtn']))
@@ -34,6 +86,7 @@ if(isset($_POST['updatebtn']))
     $username = $_POST['edit_username'];
     $email = $_POST['edit_email'];
     $password = $_POST['edit_password'];
+    $password = md5($password);
 
     $query = "UPDATE register SET username = '$username', email = '$email', password ='$password' WHERE id='$id'";
     $query_run = mysqli_query($connection,$query);
@@ -65,8 +118,11 @@ if(isset($_POST['deletebtn']))
 
 if(isset($_POST['login_btn']))
 {
-    $email_login=$_POST['email'];
-    $password_login=$_POST['password'];
+    // $email_login=$_POST['email'];
+    $email_login = mysqli_real_escape_string($connection, $_POST["email"]);  
+    // $password_login=$_POST['password'];
+    $password_login = mysqli_real_escape_string($connection, $_POST["password"]);  
+    $password_login = md5($password_login);
     $query = "SELECT * FROM register WHERE email ='$email_login' AND password = '$password_login' ";
     $query_run = mysqli_query($connection, $query);
 
