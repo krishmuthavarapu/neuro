@@ -31,55 +31,12 @@ if(isset($_POST['registerbtn']))
         header('Location: register.php');
     }
 }
-// logi reg test 
-// if(isset($_POST["register"]))  
-// {  
-//      if(empty($_POST["username"]) && empty($_POST["password"]))  
-//      {  
-//           echo '<script>alert("Both Fields are required")</script>';  
-//      }  
-//      else  
-//      {  
-//           $username = mysqli_real_escape_string($connect, $_POST["username"]);  
-//           $password = mysqli_real_escape_string($connect, $_POST["password"]);  
-//           $password = md5($password);  
-//           $query = "INSERT INTO users (username, password) VALUES('$username', '$password')";  
-//           if(mysqli_query($connect, $query))  
-//           {  
-//                echo '<script>alert("Registration Done")</script>';  
-//           }  
-//      }  
-// }  
-// if(isset($_POST["login"]))  
-// {  
-//      if(empty($_POST["username"]) && empty($_POST["password"]))  
-//      {  
-//           echo '<script>alert("Both Fields are required")</script>';  
-//      }  
-//      else  
-//      {  
-//           $username = mysqli_real_escape_string($connect, $_POST["username"]);  
-//           $password = mysqli_real_escape_string($connect, $_POST["password"]);  
-//           $password = md5($password);  
-//           $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";  
-//           $result = mysqli_query($connect, $query);  
-//           if(mysqli_num_rows($result) > 0)  
-//           {  
-//                $_SESSION['username'] = $username;  
-//                header("location:entry.php");  
-//           }  
-//           else  
-//           {  
-//                echo '<script>alert("Wrong User Details")</script>';  
-//           }  
-//      }  
-// }  
 
 
 
-// end
 
-// update code
+
+// update register code
 if(isset($_POST['updatebtn']))
 {
     $id = $_POST['edit_id'];
@@ -99,19 +56,6 @@ if(isset($_POST['updatebtn']))
         header('Location: register.php');    }
 }
 
-// delete 
-if(isset($_POST['deletebtn']))
-{
-  $id = $_POST['delete_id'];
-  $query = "DELETE FROM register WHERE id ='$id'";
-  $query_run = mysqli_query($connection, $query);    
-  if($query_run){
-    $_SESSION['success']="Your data is deleted";
-    header('Location: register.php');
-}else{
- $_SESSION['status']="Your data NOT deleted";
- header('Location: register.php');    }
-}
 
 
 // login

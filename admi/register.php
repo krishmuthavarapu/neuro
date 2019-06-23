@@ -64,7 +64,7 @@ include('includes/header.php'); ?>
     ?>
     <div class="row">
         <?php
-        
+
         $query = "SELECT * FROM register";
         $query_run = mysqli_query($connection, $query);
         ?>
@@ -90,17 +90,19 @@ include('includes/header.php'); ?>
                                 <td><?php echo $row['username']; ?></td>
                                 <td><?php echo $row['email']; ?></td>
                                 <td><?php echo $row['password']; ?></td>
-                                
-                                <td><form action="register_edit.php" method="post">
-                                    <input type="hidden" name="edit_id" value="<?php echo $row['id']; ?>">
-                                    <button class="btn-success " name="edit_btn" type="submit">Edit</button>
+
+                                <td>
+                                    <form action="register_edit.php" method="post">
+                                        <input type="hidden" name="edit_id" value="<?php echo $row['id']; ?>">
+                                        <button class="btn-success " name="edit_btn" type="submit">Edit</button>
                                     </form>
                                 </td>
                                 <td>
-                                <form action="code.php" method="post">
-                                    <input type="hidden" name="delete_id" value="<?php echo $row['id'];?>">
-                                    <button class="btn-danger " name="deletebtn" type="submit">Delete</button>
-                                    </form>
+                                    <form action="register_delete.php" method="post">
+
+                                        <input type="hidden" name="delete_id" value="<?php echo $row['id']; ?>">
+                                        <button class="btn-danger " name="deletebtn" type="submit">Delete</button>
+
                                 </td>
 
 

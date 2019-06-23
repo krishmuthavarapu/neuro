@@ -342,7 +342,7 @@ EOT;
                 <div class="col-lg-4 col-md-4">
                     <div class="future-services text-center wow slideInUp" data-wow-duration="0.5s">
                         <div class="future-img">
-                            <img src="img/feature/turn.png" class="img-fluid mb-4" alt="">
+                            <img src="img/feature/integration.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Idea Validation</h4>
                         <p class="mb-0 jus">We encourage our clients to come up with their needs. We take...</p>
@@ -365,7 +365,7 @@ EOT;
                 <div class="col-lg-4 col-md-4">
                     <div class="future-services text-center wow slideInUp" data-wow-duration="1.5s">
                         <div class="future-img">
-                            <img src="img/feature/ml.png" class="img-fluid mb-4" alt="">
+                            <img src="img/feature/board.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Pipeline Acceleration</h4>
                         <p class="mb-0 jus">Most of the computationally intensive tasks are...</p>
@@ -443,7 +443,7 @@ EOT;
                 <div class="col-lg-4 col-md-4">
                     <div class="future-services text-center wow slideInUp" data-wow-duration="0.5s">
                         <div class="future-img">
-                            <img src="img/feature/ad.png" class="img-fluid mb-4" alt="">
+                            <img src="img/feature/anatomy.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Natural language processing (NLP)</h4>
                         <p class="mb-0 jus">We help our customers in bridging the gap between human ...</p>
@@ -464,7 +464,7 @@ EOT;
                 <div class="col-lg-4 col-md-4">
                     <div class="future-services text-center wow slideInUp" data-wow-duration="1.5s">
                         <div class="future-img">
-                            <img src="img/feature/dev.png" class="img-fluid mb-4" alt="">
+                            <img src="img/feature/social-media.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Computer Vision</h4>
                         <p class="mb-0 jus">Computer Vision (CV) is a field devoted for analyzing, modifying, and ...</p>

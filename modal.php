@@ -78,7 +78,7 @@
             </div>
             <div class="modal-body text-center">
                 <div class="future-img">
-                    <img src="img/feature/turn.png" class="img-fluid mb-4" alt="">
+                    <img src="img/feature/integration.png" class="img-fluid mb-4" alt="">
                 </div>
                 <p class="mb-0 jus">We encourage our clients to come up with their needs. We take up the responsibility in building the pipe line and scoping out the effort and realization possibilities. This kind of description and the purpose described is enough for our teams to enhance the idea considering the feasibility study.</p>
 
@@ -124,7 +124,7 @@
             </div>
             <div class="modal-body text-center">
                 <div class="future-img">
-                    <img src="img/feature/ml.png" class="img-fluid mb-4" alt="">
+                    <img src="img/feature/board.png" class="img-fluid mb-4" alt="">
                 </div>
                 <p class="mb-0 jus">Most of the computationally intensive tasks are required to be ported on to some kind of parallel architecture. We do port pipeline built over any hardware platforms based on the need.
                 </p>
@@ -148,7 +148,7 @@
             </div>
             <div class="modal-body text-center">
                 <div class="future-img">
-                    <img src="img/feature/ad.png" class="img-fluid mb-4" alt="">
+                    <img src="img/feature/anatomy.png" class="img-fluid mb-4" alt="">
                 </div>
                 <p class="mb-0 jus">We help our customers in bridging the gap between human communication and digital data, and engage their customers in more meaningful ways. We offer language processing services, by blending linguistic knowledge and AI skills. Fully extensible knowledge graph and custom integration needs </p>
 
@@ -193,7 +193,7 @@
             </div>
             <div class="modal-body text-center">
                 <div class="future-img">
-                    <img src="img/feature/dev.png" class="img-fluid mb-4" alt="">
+                    <img src="img/feature/social-media.png" class="img-fluid mb-4" alt="">
                 </div>
                 <p class="mb-0 jus">Computer Vision (CV) is a field devoted for analyzing, modifying, and detailed level understanding of images. We enable the companies with the vision technology reducing their time to market with our expertise in realizing the algorithms.</p>
 
