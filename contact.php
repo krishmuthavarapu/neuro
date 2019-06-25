@@ -18,7 +18,7 @@
     <div class="col-md-12">
         <div class="md-form mb-0">
         <i class="fas fa-envelope prefix grey-text"></i>
-            <input type="text" id="email" name="email" class="form-control" required>
+            <input type="email" id="email" name="email" class="form-control" required>
             <label for="email" class="">Your email</label>
         </div>
     </div>

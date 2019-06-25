@@ -151,9 +151,9 @@ EOT;
             <div class="row">
                 <div class="col-auto mr-auto">
                     <div class="btn-group">
-                        <button class="btn btn-secondary btn-neuro btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <!-- <button class="btn btn-secondary btn-neuro btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             English
-                        </button>
+                        </button> -->
                     </div>
                 </div>
                 <div class="col-auto sub-main">
@@ -264,7 +264,7 @@ EOT;
             <div class="row mt-3">
                 <div class="col-lg-6 text ">
                     <div class="p-5 future-services  wow slideInUp text-center" data-wow-duration="0.5s">
-                        <h4 class="font-weight-bold text-center">Our <b class="headings">Mission</b></h4>
+                        <h4 class="font-weight-bold text-center"><b class="headings">Our </b>Mission</h4>
                         <!-- <div class="future-img">
                             <img src="img/feature/mission.png" style="width:20%" class="mt-4 img-fluid mb-2" alt="">
                         </div> -->
@@ -277,7 +277,7 @@ EOT;
                 </div>
                 <div class="col-lg-6 text ">
                     <div class="p-5 future-services  wow slideInUp text-center" data-wow-duration="0.5s">
-                        <h4 class="font-weight-bold text-center">Our <b class="headings">Vision</b></h4>
+                        <h4 class="font-weight-bold text-center"><b class="headings">Our </b>Vision</h4>
                         <!-- <div class="future-img">
                             <img src="img/feature/vision.png" style="width:20%" class="mt-4 img-fluid mb-2" alt="">
                         </div> -->
@@ -432,7 +432,7 @@ EOT;
             <div class="row">
                 <div class="col-sm-12">
                     <div class="title-box">
-                        <h2 class="title font-weight-bold">What <b class="headings">We Do</b></h2>
+                        <h2 class="title font-weight-bold"><b class="headings">What </b>We Do</h2>
                         <!-- <p class="sub-title">Simply dummy has been the industry's standard dummy text.</p> -->
                     </div>
                 </div>
@@ -523,7 +523,7 @@ EOT;
             <div class="row">
                 <div class="col-sm-12">
                     <div class="title-box">
-                        <h2 class="title font-weight-bold">Technologies <b class="headings"> We use</b></h2>
+                        <h2 class="title font-weight-bold"><b class="headings">Technologies </b> We Use</h2>
                         <p class="sub-title">We Work on Many Programming Languages and tools, Mainly on.</p>
                     </div>
                 </div>
@@ -606,12 +606,12 @@ EOT;
             </div>
         </div>
     </section>
-    <section class="iq-clients pt-5 mt-0 " id="career">
+    <section class="iq-clients pt-5 pt-0 " id="career">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="title-box">
-                        <h2 class="title font-weight-bold">Current <b class="headings">Openings</b></h2>
+                        <h2 class="title font-weight-bold"><b class="headings">Current</b> Openings</h2>
                         <p class="sub-title">Work with our amazing team.</p>
                     </div>
                 </div>
@@ -656,7 +656,7 @@ EOT;
             <div class="row">
                 <div class="col-sm-12">
                     <div class="title-box">
-                        <h2 class="title font-weight-bold">Our <b class="headings"> Partners</b></h2>
+                        <h2 class="title font-weight-bold"><b class="headings">Our</b> Partners</h2>
                         <!-- <p class="sub-title">We Work on Many Programming Languages and tools, Mainly on.</p> -->
                     </div>
                 </div>
@@ -727,12 +727,13 @@ EOT;
  
                 $result = mysqli_query($conn, $sql);
 
-                header('Location: http://www.neuronoids.com/');
+                // header('Location: http://www.neuronoids.com/');
+                echo "<script>window.location.href='http://www.neuronoids.com/'</script>";
             }
 
             ?>
             <!--Section heading-->
-            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact <b class="headings">us</b></h2>
+            <h2 class="h1-responsive font-weight-bold text-center my-4"><b class="headings">Contact</b> Us</h2>
             <!--Section description-->
             <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
                 a matter of hours to help you.</p>

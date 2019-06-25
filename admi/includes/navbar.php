@@ -166,6 +166,11 @@
                 Registered admins
               </a>
             </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a href="http://www.neuronoids.com/" target="_blank" class="nav-link ">
+                neuronoids.com
+              </a>
+            </li>
             <!-- <li class="nav-item dropdown no-arrow mx-1">
               <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-bell fa-fw"></i>
