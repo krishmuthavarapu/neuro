@@ -191,9 +191,9 @@ EOT;
                                 <li class="nav-item">
                                     <a class="nav-link" href="#career">Careers</a>
                                 </li>
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link" data-toggle="modal" data-target="#demo" href="#!">Demo</a>
-                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="modal" data-target="#demo1" href="#!">Demo</a>
+                                </li>
 
                             </ul>
                         </div>
@@ -456,7 +456,7 @@ EOT;
                             <img src="img/feature/data.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Data Analytics</h4>
-                        <p class="mb-0 jus">Neuronoids turns technology into business outcomes by delivering Information ...</p>
+                        <p class="mb-0 jus">Neuronoids turns technology into business outcomes by delivering...</p>
                         <a href="#!" data-toggle="modal" data-target="#wedo2">Read more</a>
 
                     </div>
@@ -489,7 +489,7 @@ EOT;
                             <img src="img/feature/ai.png" class="img-fluid mb-4" alt="">
                         </div>
                         <h4 class="mb-3">Deep Learning</h4>
-                        <p class="mb-0 jus">To maximize your data science potential, it is necessary to determine ...</p>
+                        <p class="mb-0 jus">To maximize your data science potential, it is necessary to  ...</p>
                         <a href="#!" data-toggle="modal" data-target="#wedo5">Read more</a>
 
                     </div>
@@ -725,7 +725,7 @@ EOT;
                 $sql = "INSERT INTO users(name, email, number, subject, message, date)
     VALUES ('" . $_POST["name"] . "','" . $_POST["email"] . "', '" . $_POST["number"] . "', '" . $_POST["subject"] . "', '" . $_POST["message"] . "', '" . $mysqltime . "')";
  
-                $result = mysqli_query($conn, $sql);
+                $result = mysqli_query($connection, $sql);
 
                 // header('Location: http://www.neuronoids.com/');
                 echo "<script>window.location.href='http://www.neuronoids.com/'</script>";
@@ -967,7 +967,7 @@ $('#return-to-top').click(function() {      // When arrow is clicked
             var owl = $('.owl-carousel1');
             owl.owlCarousel({
                 margin: 10,
-                nav: true,
+                nav: false,
                 loop: true,
                 autoplay: true,
                 autoplayTimeout: 3000,
@@ -991,7 +991,7 @@ $('#return-to-top').click(function() {      // When arrow is clicked
             var owl = $('.owl-carousel2');
             owl.owlCarousel({
                 margin: 10,
-                nav: true,
+                nav: false,
                 loop: true,
                 autoplay: true,
                 autoplayTimeout: 3000,
@@ -1015,7 +1015,7 @@ $('#return-to-top').click(function() {      // When arrow is clicked
             var owl = $('.owl-carousel4');
             owl.owlCarousel({
                 margin: 10,
-                nav: true,
+                nav: false,
                 loop: true,
                 autoplay: true,
                 autoplayTimeout: 3000,
@@ -1039,11 +1039,36 @@ $('#return-to-top').click(function() {      // When arrow is clicked
             var owl = $('.owl-carousel3');
             owl.owlCarousel({
                 margin: 10,
-                nav: true,
+                nav: false,
                 loop: true,
                 autoplay: true,
                 autoplayTimeout: 4000,
                 autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+        })
+    </script>
+     <script>
+        $(document).ready(function() {
+            var owl = $('.owl-carousel-demo');
+            owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                navText: ["<p class='p-2 btn mt-3'>Previos</p>","<p class='p-2 btn mt-3'>Next</p>"],
+                loop: true,
+                autoplay: false,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: false,
                 responsive: {
                     0: {
                         items: 1

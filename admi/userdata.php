@@ -9,16 +9,16 @@ include('includes/header.php'); ?>
 
 <div class="container">
     <div class="row">
-    <?php
-    if (isset($_SESSION['success']) && $_SESSION['success'] != '') {
-        echo '<h4>' . $_SESSION['success'] . '</h4>';
-        unset($_SESSION['success']);
-    }
-    if (isset($_SESSION['status']) && $_SESSION['status'] != '') {
-        echo '<h4 class="bg-warning">' . $_SESSION['status'] . '</h4>';
-        unset($_SESSION['status']);
-    }
-    ?>
+        <?php
+        if (isset($_SESSION['success']) && $_SESSION['success'] != '') {
+            echo '<h4>' . $_SESSION['success'] . '</h4>';
+            unset($_SESSION['success']);
+        }
+        if (isset($_SESSION['status']) && $_SESSION['status'] != '') {
+            echo '<h4 class="bg-warning">' . $_SESSION['status'] . '</h4>';
+            unset($_SESSION['status']);
+        }
+        ?>
         <?php
         $query = "SELECT * FROM users";
         $query_run = mysqli_query($connection, $query);
@@ -51,28 +51,28 @@ include('includes/header.php'); ?>
                                 <td><?php echo $row['date']; ?></td>
                                 <td>
                                     <form action="code.php" method="POST">
-                                    <input type="hidden" name="delete_Id" value="<?php echo $row['Id'];?>">
-                                    <button class="btn-danger " name="delete_ud" type="submit">Delete</button>
+                                        <input type="hidden" name="delete_Id" value="<?php echo $row['Id']; ?>">
+                                        <button class="btn-danger " name="delete_ud" type="submit">Delete</button>
                                     </form>
                                 </td>
 
                                 <!-- <td><button class="btn-success " type="submit">Edit</button></td>
-                                                        <td><button class="btn-danger " type="submit">Delete</button></td> -->
+                                                                                <td><button class="btn-danger " type="submit">Delete</button></td> -->
 
 
                             </tr>
                         <?php
+                        }
+                    } else {
+                        echo "No record found";
                     }
-                } else {
-                    echo "No record found";
-                }
-                ?>
+                    ?>
                 </tbody>
             </table>
         </div>
     </div>
     <div class="row">
-     <h1>Job Applications</h1>
+        <h1>Job Applications</h1>
     </div>
     <div class="row">
         <?php
@@ -107,27 +107,28 @@ include('includes/header.php'); ?>
                                 <td><?php echo $row['date']; ?></td>
                                 <td>
                                     <form action="code.php" method="POST">
-                                    <input type="hidden" name="delete_id" value="<?php echo $row['id'];?>">
-                                    <button class="btn-danger " name="delete_jd" type="submit">Delete</button>
+                                        <input type="hidden" name="delete_id" value="<?php echo $row['id']; ?>">
+                                        <button class="btn-danger " name="delete_jd" type="submit">Delete</button>
                                     </form>
                                 </td>
 
 
                                 <!-- <td><button class="btn-success " type="submit">Edit</button></td>
-                                                        <td><button class="btn-danger " type="submit">Delete</button></td> -->
+                                                                                <td><button class="btn-danger " type="submit">Delete</button></td> -->
 
 
                             </tr>
                         <?php
+                        }
+                    } else {
+                        echo "No record found";
                     }
-                } else {
-                    echo "No record found";
-                }
-                ?>
+                    ?>
                 </tbody>
             </table>
         </div>
     </div>
+    
 </div>
 </div>
 <!-- End of Page Wrapper -->

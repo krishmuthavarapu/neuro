@@ -106,5 +106,19 @@ if(isset($_POST['delete_jd']))
      header('Location: userdata.php');    
      }
     }
+    // delete Video Data
+    if(isset($_POST['delete_video_url']))
+{
+    $id = $_POST['delete_id'];
+    $query = "DELETE FROM demo_video WHERE Id = '$id'";
+    $query_run = mysqli_query($connection,$query);
+    if($query_run){
+        $_SESSION['success']="demo data is deleted";
+        header('Location: demo-video.php');
+    }else{
+     $_SESSION['status']="demo data NOT deleted";
+     header('Location: demo-video.php');    
+     }
+    }
 ?>
 

@@ -476,3 +476,52 @@
                         <p class="mb-0">Turnkey is a product or service that is designed, supplied, built, or installed fully complete and ready to operate.</p>
                     </div>
                 </div> -->
+<!-- demo1 tral -->
+<div class="modal fade" id="demo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header ">
+                <h5 class="modal-title" id="exampleModalLabel">Demo Videos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <!-- <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                    <iframe class="embed-responsive-item" src="videos/LogoDetection.mp4" allowfullscreen></iframe>
+                </div> -->
+                <?php
+                $query = "SELECT * FROM demo_video";
+                $query_run = mysqli_query($connection, $query);
+                ?>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="owl-carousel owl-carousel-demo" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true" data-items="6" data-items-laptop="5" data-items-tab="3" data-items-mobile="2" data-items-mobile-sm="1">
+                            <?php
+                            if (mysqli_num_rows($query_run) > 0) {
+                                while ($row = mysqli_fetch_assoc($query_run)) {
+                                    ?>
+                                    <div class="item">
+                                        <div class="">
+                                            <h1 class="text-dark"><?php echo $row['demo_name']; ?></h1>
+                                            <div class="embed-responsive embed-responsive-16by9">
+                                                <iframe class="embed-responsive-item" src="<?php echo $row['video_url']; ?>" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php
+                        }
+                    } else {
+                        echo "No record found";
+                    }
+                    ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn br-90 cus-grad btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>

@@ -18,6 +18,11 @@
     <i class="fas fa-fw fa-tachometer-alt"></i>
     <span>Data</span></a>
 </li>
+<li class="nav-item active">
+  <a class="nav-link" href="demo-video.php">
+    <i class="fas fa-fw fa-tachometer-alt"></i>
+    <span>Demo Video</span></a>
+</li>
 
 <!-- Divider -->
 <hr class="sidebar-divider">

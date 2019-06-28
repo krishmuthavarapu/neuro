@@ -108,7 +108,16 @@
 }
 /* header */
 a.nav-link.active{
-    background: #aace37 !important;
+    /* background: #aace37 !important; */
+    background: #75cd6f;
+    background: -moz-linear-gradient(left, rgba(175, 219, 37, 1) 15%, rgba(0, 0, 0, 0.8) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(15%, rgba(175, 219, 37, 1)), color-stop(100%, rgba(0, 0, 0, 0.8)));
+    background: -webkit-linear-gradient(left, rgba(175, 219, 37, 1) 15%, rgba(0, 0, 0, 0.8) 100%);
+    background: -o-linear-gradient(left, rgba(175, 219, 37, 1) 15%, rgba(0, 0, 0, 0.8) 100%);
+    background: -ms-linear-gradient(left, rgba(175, 219, 37, 1) 15%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(to left, rgba(175, 219, 37, 1) 0%, rgba(0, 0, 0, 0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75cd6f', endColorstr='#46c894', GradientType=1);
+    color: #fff
 }
 li.nav-item {
     margin: 0px 10px 0px 0px;
@@ -750,7 +759,7 @@ a, button {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#75cd6f', endColorstr='#46c894', GradientType=1);
 }
 .owl-nav{
-    display: none
+    /* display: none */
 }
 #back-to-top .top {
     z-index: 999;
@@ -779,7 +788,7 @@ a, button {
 }
 #feedback a {
 	display: block;
-	background:#aace37;
+	/* background:#aace37; */
 	height: 52px;
 	padding-top: 10px;
 	width: 155px;
@@ -791,7 +800,7 @@ a, button {
 	text-decoration: none;
 }
 #feedback a:hover {
-	background:#aace37;
+	/* background:#aace37; */
 }
 
 @media (min-width: 576px){
