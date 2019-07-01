@@ -15,7 +15,7 @@ if (array_key_exists('email', $_POST)) {
     //Tell PHPMailer to use SMTP - requires a local mail server
     //Faster and safer than using mail()
     $mail->isSMTP();
-    $mail->Host = "tls://smtp.gmail.com";
+    $mail->Host = "tls://smtp.zoho.com";
 
     $mail->Port = 587;  
 
@@ -1064,7 +1064,7 @@ $('#return-to-top').click(function() {      // When arrow is clicked
             owl.owlCarousel({
                 margin: 10,
                 nav: true,
-                navText: ["<p class='p-2 btn mt-3'>Previos</p>","<p class='p-2 btn mt-3'>Next</p>"],
+                navText: ["<p class='p-2 btn mt-3'>Previous</p>","<p class='p-2 btn mt-3'>Next</p>"],
                 loop: true,
                 autoplay: false,
                 autoplayTimeout: 3000,

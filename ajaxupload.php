@@ -52,8 +52,7 @@ require 'vendor/autoload.php';
 
    $mail = new PHPMailer;
    $mail->isSMTP();
-   $mail->Host = "tls://smtp.gmail.com";
-
+   $mail->Host = "tls://smtp.zoho.com";
    $mail->Port = 587;  
 
    $mail->SMTPAuth = true;
@@ -96,5 +95,6 @@ require 'vendor/autoload.php';
    }
 
    echo "mail sent";
+   echo "<script>window.location.href='http://www.neuronoids.com/'</script>";
 
 ?>
